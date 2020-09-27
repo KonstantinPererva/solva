@@ -1,0 +1,26 @@
+.s-net-list {
+
+  &_line {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 0 0 10px;
+
+    & a {
+      white-space: nowrap;
+      font-family: $ff-m;
+      font-style: normal;
+      font-weight: $fw-m-r;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+      color: #FFFFFF;
+    }
+  }
+
+  &_line &__item {
+    margin: 0 32px 0 0;
+  }
+}

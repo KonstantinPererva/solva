@@ -1,0 +1,28 @@
+.button-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 32px;
+  height: 32px;
+  @include button;
+  transition: 300ms;
+
+  & svg {
+    transition: inherit;
+
+    & path {
+      transition: inherit;
+    }
+  }
+
+  &.open {
+    & svg {
+      & path:first-child {
+        d: path("M3 8 L30 0");
+      }
+      & path:last-child {
+        d: path("M0 0L28 8");
+      }
+    }
+  }
+}

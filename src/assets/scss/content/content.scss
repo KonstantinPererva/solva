@@ -1,0 +1,31 @@
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  .section-main & {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    height: 100%;
+  }
+
+  &__line {
+    display: block;
+    border-top: 1px solid #fff;
+    margin: 0 0 80px;
+  }
+
+  .footer & {
+    padding: 0 0 40px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .menu & {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}

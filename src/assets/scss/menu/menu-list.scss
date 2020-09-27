@@ -1,0 +1,21 @@
+.menu-list {
+  &__item {
+    margin: 0 0 2vmin;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    & a {
+      font-family: $ff-o;
+      font-style: normal;
+      font-weight: normal;
+      //font-size: 10vmin;
+      @include fzIns(100);
+      line-height: 120%;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+}

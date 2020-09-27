@@ -1,0 +1,80 @@
+.button-corner {
+  @include button;
+  position: relative;
+  min-width: 160px;
+  height: 37px;
+  padding: 0 27px;
+  background: transparent;
+  font-family: $ff-o;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 137%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: $c-dark;
+
+  &:focus, &:active {
+    color: #fff;
+    background: $c-blue;
+  }
+
+  &_white {
+    color: #fff;
+  }
+
+  &:hover, &:focus, &:active {
+    &:before {
+      width: 100%;
+      height: 100%;
+      border-left: 2px solid $c-blue;
+      border-bottom: 2px solid $c-blue;
+      transition: height 150ms, width 150ms 150ms;
+    }
+
+    &:after {
+      width: 100%;
+      height: 100%;
+      border-right: 2px solid $c-blue;
+      border-top: 2px solid $c-blue;
+      transition: height 150ms, width 150ms 150ms;
+    }
+  }
+
+  & span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 12px;
+    border-left: 1px solid $c-blue;
+    border-bottom: 2px solid $c-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: width 150ms, height 150ms 150ms;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 12px;
+    border-right: 2px solid $c-blue;
+    border-top: 3px solid $c-blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transition: width 150ms, height 150ms 150ms;
+  }
+
+  .info-box-double__right & {
+    margin-left: 100px;
+  }
+}

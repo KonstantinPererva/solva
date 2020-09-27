@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $fz;
+  font-family: $ff-m;
+  font-weight: $fw-m-r;
+}
+
+svg {
+  flex-shrink: 0;
+  display: block;
+}
+
+img {
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+}

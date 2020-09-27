@@ -1,0 +1,14 @@
+.footer-hold {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__left {
+    flex-shrink: 0;
+  }
+
+  &__right {
+    flex-shrink: 0;
+    text-align: right;
+  }
+}

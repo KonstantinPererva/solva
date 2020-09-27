@@ -1,0 +1,35 @@
+.button-hidden-text {
+  @include button;
+  justify-content: flex-end;
+  height: 50px;
+
+  &:hover {
+    @media (hover: hover) {
+      .button-hidden-text__text {
+        width: 144px;
+      }
+    }
+  }
+
+  &__text {
+    flex-shrink: 0;
+    display: block;
+    font-family: $ff-m;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.4375px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    overflow: hidden;
+    width: 0;
+    transition: 150ms;
+    white-space: nowrap;
+  }
+
+  &__ico {
+    flex-shrink: 0;
+    display: block;
+  }
+}

@@ -1,0 +1,15 @@
+.section-hold {
+  display: flex;
+
+  &__left {
+    width: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__right {
+    width: 770px;
+    //min-height: 400px;
+  }
+}

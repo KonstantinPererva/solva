@@ -1,0 +1,23 @@
+.section-title {
+  position: relative;
+  font-family: $ff-o;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 120%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+
+  .section-main & {
+    width: 923px;
+    margin: 0 auto;
+  }
+
+  .section-page & {
+    transform: translateY(-50%) translateX(-50%) rotate(-90deg);
+    transform-origin: right center;
+    white-space: nowrap;
+  }
+}

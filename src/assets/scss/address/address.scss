@@ -1,0 +1,14 @@
+.address {
+  &__row {
+    & a {
+      font-family: $ff-m;
+      font-style: normal;
+      font-weight: $fw-m-r;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+      color: #FFFFFF;
+
+    }
+  }
+}
