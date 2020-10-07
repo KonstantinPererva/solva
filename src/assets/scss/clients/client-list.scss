@@ -1,0 +1,12 @@
+.client-list {
+
+  &__item {
+    padding: 0 0 40px;
+    margin: 0 0 40px;
+    border-bottom: 1px solid #000;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

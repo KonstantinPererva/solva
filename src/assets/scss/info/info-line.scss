@@ -1,5 +1,9 @@
 .info-line {
   display: block;
   margin: 40px 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $c-dark;
+
+  .wrapper-theme-dark & {
+    border-bottom: 1px solid #fff;
+  }
 }

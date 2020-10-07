@@ -12,6 +12,11 @@
 
     & path {
       transition: inherit;
+      stroke: $c-dark;
+
+      .wrapper-theme-dark & {
+        stroke: #E9EBED;
+      }
     }
   }
 

@@ -6,6 +6,15 @@
   line-height: 125%;
   letter-spacing: 0.75px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $c-dark;
   overflow: hidden;
+  margin: 0 0 10px;
+
+  &_ttn {
+    text-transform: none;
+  }
+
+  .wrapper-theme-dark & {
+    color: #fff;
+  }
 }

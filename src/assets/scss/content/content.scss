@@ -14,8 +14,12 @@
 
   &__line {
     display: block;
-    border-top: 1px solid #fff;
+    border-top: 1px solid $c-dark;
     margin: 0 0 80px;
+
+    .wrapper-theme-dark & {
+      border-top: 1px solid #fff;
+    }
   }
 
   .footer & {

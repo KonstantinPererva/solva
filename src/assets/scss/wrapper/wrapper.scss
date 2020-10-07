@@ -4,7 +4,7 @@
   margin: 0 auto;
   overflow: hidden;
 
-  &_dark {
+  &.wrapper-theme-dark {
     background: $c-dark_2;
   }
 }

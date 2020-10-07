@@ -1,0 +1,36 @@
+.logo {
+  position: relative;
+  height: 51px;
+
+  .header.fixed-top & {
+    height: 34px;
+  }
+
+  & svg {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+
+    & path {
+      fill: $c-dark;
+
+      &:last-child {
+        fill: none;
+        stroke: $c-dark;
+      }
+    }
+  }
+
+  .wrapper-theme-dark & {
+    & svg {
+      & path {
+        fill: #fff;
+
+        &:last-child {
+          fill: none;
+          stroke: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.client-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  &__left {
+    flex-grow: 1;
+  }
+
+  &__right {
+    width: 170px;
+    flex-shrink: 0;
+  }
+}

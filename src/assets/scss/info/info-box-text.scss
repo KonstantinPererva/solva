@@ -5,8 +5,16 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.5px;
-  color: #FFFFFF;
+  color: $c-dark;
   margin: 0 0 40px;
+
+  &_sm {
+    width: 170px;
+  }
+
+  .wrapper-theme-dark & {
+    color: #fff;
+  }
 
   & p {
     margin: 0;

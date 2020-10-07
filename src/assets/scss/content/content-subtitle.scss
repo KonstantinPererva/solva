@@ -5,5 +5,9 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.5px;
-  color: #FFFFFF;
+  color: $c-dark;
+
+  .wrapper-theme-dark & {
+    color: #fff;
+  }
 }
