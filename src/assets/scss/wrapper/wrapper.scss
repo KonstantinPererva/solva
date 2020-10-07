@@ -1,8 +1,11 @@
 .wrapper {
   max-width: 1920px;
   width: 100%;
+  min-height: 100%;
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   &.wrapper-theme-dark {
     background: $c-dark_2;

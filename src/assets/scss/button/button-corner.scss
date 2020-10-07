@@ -14,6 +14,14 @@
   letter-spacing: 0.5px;
   color: $c-dark;
 
+  .info-box-double__right & {
+    margin-left: 100px;
+  }
+  
+  .wrapper-theme-dark & {
+    color: #fff;
+  }
+
   &:focus, &:active {
     color: #fff;
     background: $c-blue;
@@ -72,9 +80,5 @@
     right: 0;
     z-index: 0;
     transition: width 150ms, height 150ms 150ms;
-  }
-
-  .info-box-double__right & {
-    margin-left: 100px;
   }
 }
