@@ -1,4 +1,8 @@
 .address {
+  &__row + &__row {
+    margin: 10px 0 0;
+  }
+
   &__row {
     & a {
       font-family: $ff-m;
@@ -21,5 +25,24 @@
         }
       }
     }
+  }
+
+  &__title {
+    font-family: $ff-m;
+    font-style: normal;
+    font-weight: $fw-m-b;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    margin: 0 0 10px;
+    color: $c-dark;
+
+    .wrapper-theme-dark & {
+      color: #FFFFFF;
+    }
+  }
+
+  &__box {
+    margin: 0 0 40px;
   }
 }
