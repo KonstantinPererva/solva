@@ -7,6 +7,7 @@
   <title>Article</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/libs/swiper/swiper.css">
 </head>
 <body>
 
@@ -15,19 +16,23 @@
     <div class="content">
       <div class="menu-list">
         <div class="menu-list__item">
-          <a href="">Home</a>
+          <a href="/">Home</a>
         </div>
+
         <div class="menu-list__item">
-          <a href="">About us</a>
+          <a href="about.html">About us</a>
         </div>
+
         <div class="menu-list__item">
-          <a href="">Works</a>
+          <a href="works.html">Works</a>
         </div>
+
         <div class="menu-list__item">
-          <a href="">Services</a>
+          <a href="services.html">Services</a>
         </div>
+
         <div class="menu-list__item">
-          <a href="">Contact</a>
+          <a href="contacts.html">Contact</a>
         </div>
       </div>
 
@@ -65,7 +70,7 @@
     </div>
   </div>
 
-  <header class="header">
+  <header class="header in-section-main">
     <div class="content">
       <div class="header-hold">
         <div class="header-hold__logo">
@@ -96,12 +101,44 @@
   <main class="main">
     <div class="section section_full-page section-main">
       <div class="section__video">
-        <video class="banner-video" id="video-1" autoplay="" loop="" playsinline="playsinline" poster="assets/img/preview.png">
-          <source src="assets/video/udecasi.mp4" type="video/mp4" />
+        <video class="banner-video" id="video-1" autoplay="" loop="" muted="" playsinline="playsinline" poster="assets/img/preview.png">
+          <source src="assets/video/test.mp4" type="video/mp4" />
+          <source src="assets/video/test.webm" type="video/webm" />
         </video>
       </div>
 
-      <div class="section__substrate"></div>
+      <div class="video-cutout">
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+        <div class="video-cutout__tile hidden md-block"></div>
+      </div>
 
       <div class="content">
         <div class="section-title">
@@ -492,10 +529,22 @@
         </div>
 
         <div class="content-img-slider">
-          <div class="swiper-content">
+          <div class="swiper-container photo-gallery">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="assets/img/img_article_slide_1.jpg" alt="photo">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/img_article_slide_2.jpg" alt="photo">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/img_article_slide_1.jpg" alt="photo">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/img_article_slide_2.jpg" alt="photo">
               </div>
             </div>
           </div>
@@ -601,5 +650,6 @@
   </footer>
 </div>
 
+<script src="assets/libs/swiper/swiper.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
       transition: inherit;
       stroke: $c-dark;
 
-      .wrapper-theme-dark & {
+      .wrapper-theme-dark &, .in-section-main &, .in-open-popup &, .header-fixed & {
         stroke: #E9EBED;
       }
     }

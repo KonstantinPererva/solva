@@ -8,4 +8,8 @@
   padding: 130px 0 90px;
   z-index: 2900;
   background: $c-dark_2;
+
+  &.open {
+    display: block;
+  }
 }

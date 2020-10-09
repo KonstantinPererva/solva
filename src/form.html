@@ -10,24 +10,28 @@
 </head>
 <body>
 
-<div class="wrapper wrapper-theme-dark">
+<div class="wrapper">
   <div class="menu">
     <div class="content">
       <div class="menu-list">
         <div class="menu-list__item">
-          <a href="">Home</a>
+          <a href="/">Home</a>
         </div>
+
         <div class="menu-list__item">
-          <a href="">About us</a>
+          <a href="about.html">About us</a>
         </div>
+
         <div class="menu-list__item">
-          <a href="">Works</a>
+          <a href="works.html">Works</a>
         </div>
+
         <div class="menu-list__item">
-          <a href="">Services</a>
+          <a href="services.html">Services</a>
         </div>
+
         <div class="menu-list__item">
-          <a href="">Contact</a>
+          <a href="contacts.html">Contact</a>
         </div>
       </div>
 
@@ -82,7 +86,7 @@
         </div>
 
         <div class="header-hold__button">
-          <button class="button-toggle">
+          <button class="button-toggle" type="button" data-open="false">
             <svg width="32" height="12" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0L30 0" stroke="#E9EBED" stroke-width="2" stroke-linecap="square"/>
               <path d="M10 8L30 8" stroke="#E9EBED" stroke-width="2" stroke-linecap="square"/>
@@ -109,23 +113,171 @@
             <div class="info">
               <div class="info__descr">
                 <div class="info-box-text">
-                  <p>If you have any questions, please contact us in any way convenient for you.</p>
+                  <p>To get advice on your project, fill out the form below and we will contact you shortly.</p>
                 </div>
               </div>
 
               <form action="!" class="form">
-                <div class="form-checkout">
-                  <div class="form-checkout__title">
+                <div class="form-checkbox">
+                  <div class="form-checkbox__title">
                     <span>Services:</span>
                   </div>
 
-                  <div class="form-checkout__list">
-                    <label class="form-checkout__label">
-                      <input type="checkout" class="" />
+                  <ul class="form-checkbox__list">
+                    <li>
+                      <label class="form-checkbox-label">
+                        <input type="checkbox" class="form-checkbox-label__input" />
 
-                      <span ></span>
+                        <span class="form-checkbox-label__indicator">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48 8.48L1.121 5.121L0 6.238L4.48 10.719L14.078 1.121L12.961 0L4.48 8.48Z" fill="#010101"/>
+                          </svg>
+                        </span>
+
+                        <span class="form-checkbox-label__title">Marketing</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="form-checkbox-label">
+                        <input type="checkbox" class="form-checkbox-label__input" />
+
+                        <span class="form-checkbox-label__indicator">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48 8.48L1.121 5.121L0 6.238L4.48 10.719L14.078 1.121L12.961 0L4.48 8.48Z" fill="#010101"/>
+                          </svg>
+                        </span>
+
+                        <span class="form-checkbox-label__title">PR</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="form-checkbox-label">
+                        <input type="checkbox" class="form-checkbox-label__input" />
+
+                        <span class="form-checkbox-label__indicator">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48 8.48L1.121 5.121L0 6.238L4.48 10.719L14.078 1.121L12.961 0L4.48 8.48Z" fill="#010101"/>
+                          </svg>
+                        </span>
+
+                        <span class="form-checkbox-label__title">Branding</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="form-checkbox-label">
+                        <input type="checkbox" class="form-checkbox-label__input" />
+
+                        <span class="form-checkbox-label__indicator">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48 8.48L1.121 5.121L0 6.238L4.48 10.719L14.078 1.121L12.961 0L4.48 8.48Z" fill="#010101"/>
+                          </svg>
+                        </span>
+
+                        <span class="form-checkbox-label__title">Content</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="form-checkbox">
+                  <div class="form-checkbox__title">
+                    <span>Budget in USD:</span>
+                  </div>
+
+                  <ul class="form-checkbox__list">
+                    <li>
+                      <label class="form-checkbox-label">
+                        <input type="radio" name="budget" class="form-checkbox-label__input" />
+
+                        <span class="form-checkbox-label__indicator">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48 8.48L1.121 5.121L0 6.238L4.48 10.719L14.078 1.121L12.961 0L4.48 8.48Z" fill="#010101"/>
+                          </svg>
+                        </span>
+
+                        <span class="form-checkbox-label__title">less than 5k</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="form-checkbox-label">
+                        <input type="radio" name="budget" class="form-checkbox-label__input" />
+
+                        <span class="form-checkbox-label__indicator">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48 8.48L1.121 5.121L0 6.238L4.48 10.719L14.078 1.121L12.961 0L4.48 8.48Z" fill="#010101"/>
+                          </svg>
+                        </span>
+
+                        <span class="form-checkbox-label__title">5k -10k</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="form-checkbox-label">
+                        <input type="radio" name="budget" class="form-checkbox-label__input" />
+
+                        <span class="form-checkbox-label__indicator">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48 8.48L1.121 5.121L0 6.238L4.48 10.719L14.078 1.121L12.961 0L4.48 8.48Z" fill="#010101"/>
+                          </svg>
+                        </span>
+
+                        <span class="form-checkbox-label__title">10k -50k</span>
+                      </label>
+                    </li>
+
+                    <li>
+                      <label class="form-checkbox-label">
+                        <input type="radio" name="budget" class="form-checkbox-label__input" />
+
+                        <span class="form-checkbox-label__indicator">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48 8.48L1.121 5.121L0 6.238L4.48 10.719L14.078 1.121L12.961 0L4.48 8.48Z" fill="#010101"/>
+                          </svg>
+                        </span>
+
+                        <span class="form-checkbox-label__title">more than 50k</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="form-field">
+                  <div class="form-field__row form-field__row_double">
+                    <label class="form-field-label">
+                      <input type="text" class="form-field-label__input" />
+
+                      <span class="form-field-label__placeholder">Your name</span>
+
+                      <span class="form-field-label__error">The field is required</span>
+                    </label>
+
+                    <label class="form-field-label">
+                      <input type="text" class="form-field-label__input" />
+
+                      <span class="form-field-label__placeholder">E-mail</span>
+
+                      <span class="form-field-label__error">The field is required</span>
                     </label>
                   </div>
+
+                  <div class="form-field__row">
+                    <label class="form-field-label">
+                      <input type="text" class="form-field-label__input" />
+
+                      <span class="form-field-label__placeholder">About your project</span>
+
+                      <span class="form-field-label__error">The field is required</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__submit">
+                  <button class="button-corner button-form-submit" type="button"><span>Submit</span></button>
                 </div>
               </form>
             </div>
@@ -176,5 +328,26 @@
   </footer>
 </div>
 
+<div class="popup">
+  <div class="popup__inner">
+    <div class="popup-content">
+      <div class="popup-content__img">
+        <img src="assets/img/img_popup_success.png" alt="img" />
+      </div>
+
+      <div class="popup-content__title">
+        <span>Thank you!</span>
+      </div>
+
+      <div class="popup-content__text">
+        <p>we will contact shotly</p>
+      </div>
+
+      <div class="popup-content__button">
+        <button type="button" class="button-link">Send  another message</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

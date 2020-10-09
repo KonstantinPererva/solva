@@ -1,8 +1,9 @@
 .logo {
   position: relative;
   height: 51px;
+  transition: 300ms;
 
-  .header.fixed-top & {
+  .header.header-fixed & {
     height: 34px;
   }
 
@@ -13,6 +14,7 @@
 
     & path {
       fill: $c-dark;
+      transition: 300ms;
 
       &:last-child {
         fill: none;
@@ -21,7 +23,7 @@
     }
   }
 
-  .wrapper-theme-dark & {
+  .wrapper-theme-dark &, .in-open-popup &, .in-section-main &, .header-fixed & {
     & svg {
       & path {
         fill: #fff;

@@ -1,0 +1,15 @@
+.button-link {
+  @include button;
+  font-family: $ff-m;
+  font-style: normal;
+  font-weight: $fw-m-r;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  border-bottom: 1px solid #fff;
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
+}

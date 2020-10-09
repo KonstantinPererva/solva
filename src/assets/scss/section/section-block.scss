@@ -1,0 +1,13 @@
+.section-block {
+  position: absolute;
+  width: 470px;
+  bottom: 50px;
+  right: 0;
+  z-index: 3;
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

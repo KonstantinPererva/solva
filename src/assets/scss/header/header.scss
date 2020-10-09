@@ -3,6 +3,26 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(74,74,74,0.5);
+  //background: rgba(74,74,74,0.5);
   z-index: 3000;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-100%);
+    transition: 300ms;
+    z-index: 0;
+  }
+
+  &.header-fixed {
+    &:after {
+      transform: translateY(0);
+      background: $c-dark_2;
+    }
+  }
 }

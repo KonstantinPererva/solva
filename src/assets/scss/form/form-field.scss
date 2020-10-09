@@ -1,0 +1,19 @@
+.form-field {
+
+  &__row + &__row {
+    margin: 20px 0 0;
+  }
+
+  &__row {
+    &_double {
+      display: flex;
+      align-items: center;
+
+      & > * {
+        flex-shrink: 0;
+        width: calc(100% / 2 - 30px + 30px / 2);
+        margin: 0 30px 0 0;
+      }
+    }
+  }
+}

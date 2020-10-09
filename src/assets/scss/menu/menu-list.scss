@@ -1,4 +1,6 @@
 .menu-list {
+  width: 385px;
+
   &__item {
     margin: 0 0 2vmin;
 
@@ -7,6 +9,7 @@
     }
 
     & a {
+      display: inline-block;
       font-family: $ff-o;
       font-style: normal;
       font-weight: normal;
@@ -16,6 +19,14 @@
       letter-spacing: 4px;
       text-transform: uppercase;
       color: #FFFFFF;
+      border-bottom: 1px solid transparent;
+      transition: 300ms;
+      white-space: nowrap;
+
+      &:hover {
+        border-bottom: 1px solid #fff;
+        padding: 0 0 0 60px;
+      }
     }
   }
 }
