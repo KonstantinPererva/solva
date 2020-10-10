@@ -7,7 +7,15 @@
   letter-spacing: 0.5px;
   color: $c-dark;
 
+  &:hover {
+    color: $c-dark;
+  }
+
   .wrapper-theme-dark & {
     color: #FFFFFF;
+
+    &:hover {
+      color: #FFFFFF;
+    }
   }
 }

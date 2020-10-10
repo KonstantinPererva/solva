@@ -9,7 +9,6 @@
     margin: 0 0 10px;
 
     & a {
-      display: block;
       white-space: nowrap;
       font-family: $ff-m;
       font-style: normal;
@@ -18,33 +17,6 @@
       line-height: 150%;
       letter-spacing: 0.5px;
       color: #fff;
-      text-align: right;
-
-      & span {
-        display: block;
-      }
-
-      &:hover {
-        text-align: left;
-
-        &:after {
-          width: 100%;
-        }
-      }
-
-      &:after {
-        content: '';
-        display: block;
-        height: 1px;
-        width: 0;
-        background: #fff;
-        transition: 300ms;
-        font-size: 0;
-        line-height: 0;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-      }
 
       @media ($m-desktop) {
         font-size: 14px;
