@@ -14,8 +14,17 @@
   letter-spacing: 0.5px;
   color: $c-dark;
 
+  @media ($m-phone) {
+    min-width: 130px;
+    padding: 0 15px;
+  }
+
   .info-box-double__right & {
     margin-left: 100px;
+
+    @media ($m-table) {
+      margin-left: 50px;
+    }
   }
   
   .wrapper-theme-dark & {

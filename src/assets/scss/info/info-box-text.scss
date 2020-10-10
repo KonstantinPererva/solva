@@ -8,6 +8,10 @@
   color: $c-dark;
   margin: 0 0 40px;
 
+  @media ($m-desktop) {
+    font-size: 14px;
+  }
+
   &_sm {
     width: 170px;
   }

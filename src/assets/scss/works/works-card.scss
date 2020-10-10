@@ -1,6 +1,10 @@
 .works-card {
   display: flex;
 
+  @media ($m-desktop) {
+    justify-content: space-between;
+  }
+
   &:hover {
     & .works-card__img .wr-img {
       height: 270px;
@@ -20,6 +24,14 @@
     color: $c-dark;
     margin: 0 30px 0 0;
 
+    @media ($m-desktop) {
+      font-size: 20px;
+    }
+
+    @media ($m-desktop) {
+      margin: 0;
+    }
+
     .wrapper-theme-dark & {
       color: #FFFFFF;
     }
@@ -30,6 +42,10 @@
     flex-shrink: 0;
     width: 170px;
     margin: 0 30px 0 0;
+
+    @media ($m-desktop) {
+      display: none;
+    }
 
     & .wr-img {
       position: absolute;
@@ -53,6 +69,10 @@
     justify-content: flex-end;
     flex-shrink: 0;
     margin: 0 30px 0 0;
+
+    @media ($m-desktop) {
+      margin: 0;
+    }
   }
 
   &__text {
@@ -70,6 +90,11 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: $c-dark;
+
+    @media ($m-desktop) {
+      font-size: 14px;
+      width: 70px;
+    }
 
     .wrapper-theme-dark & {
       color: #FFFFFF;

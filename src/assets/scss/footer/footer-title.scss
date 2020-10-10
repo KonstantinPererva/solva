@@ -9,6 +9,10 @@
   color: $c-dark;
   margin: 0 0 10px;
 
+  @media ($m-desktop) {
+    font-size: 20px;
+  }
+
   .wrapper-theme-dark & {
     color: #fff;
   }

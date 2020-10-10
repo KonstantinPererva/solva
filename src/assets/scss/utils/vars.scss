@@ -6,12 +6,9 @@ $ff-o: 'Oswald', sans-serif;
 $fz: 14px;
 
 // Size
-$desktopWidth            : 1200px;
-$tableWidth              : 1151px;
-$smtableWidth            : 1023px;
-$xtableWidth             : 992px;
-$phoneWidth              : 767px;
-$smPhoneWidth            : 420px;
+$m-desktop           : 'max-width:1200px';
+$m-table             : 'max-width:992px';
+$m-phone             : 'max-width:738px';
 
 // Main color
 $c-dark: #101010;

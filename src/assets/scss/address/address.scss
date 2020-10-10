@@ -13,6 +13,10 @@
       letter-spacing: 0.5px;
       color: $c-dark;
 
+      @media ($m-desktop) {
+        font-size: 14px;
+      }
+
       &:hover, &:focus, &:active {
         color: $c-dark;
       }

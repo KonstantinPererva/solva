@@ -9,17 +9,30 @@
   text-transform: uppercase;
   color: $c-dark;
   margin: 0;
+
+  @media ($m-desktop) {
+    font-size: 70px;
+  }
+
+  @media ($m-table) {
+    font-size: 46px;
+  }
   
   .wrapper-theme-dark & {
     color: #fff;
   }
 
   .section-main & {
-    width: 970px;
+    width: 1000px;
     margin: 0 auto;
     color: #fff;
     position: relative;
+    padding: 0 15px;
     z-index: 3;
+
+    @media ($m-desktop) {
+      width: 600px;
+    }
   }
 
   .section-page & {

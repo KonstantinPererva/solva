@@ -4,6 +4,14 @@
   margin: 0 auto;
   padding: 0 15px;
 
+  @media ($m-desktop) {
+    max-width: 992px;
+  }
+
+  @media ($m-table) {
+    max-width: 738px;
+  }
+
   .section-main & {
     display: flex;
     align-items: center;
@@ -20,11 +28,6 @@
     .wrapper-theme-dark & {
       border-top: 1px solid #fff;
     }
-  }
-
-  .footer & {
-    padding: 0 0 40px;
-    border-bottom: 1px solid #fff;
   }
 
   .menu & {

@@ -1,7 +1,16 @@
 .footer-hold {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-end;padding: 0 0 40px;
+  border-bottom: 1px solid $c-dark;
+
+  .wrapper-theme-dark  & {
+    border-bottom: 1px solid #fff;
+  }
+
+  @media ($m-desktop) {
+    padding: 0 0 30px;
+  }
 
   &__left {
     flex-shrink: 0;

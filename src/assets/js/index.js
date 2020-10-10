@@ -91,6 +91,13 @@ window.addEventListener('load', function ()
             }
         }
 
+        if(window.scrollY)
+        {
+            header.classList.add('header-fixed');
+        } else {
+            header.classList.remove('header-fixed');
+        }
+
         window.addEventListener('scroll', function ()
         {
             if(window.scrollY)

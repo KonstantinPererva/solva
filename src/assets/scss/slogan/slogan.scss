@@ -9,6 +9,10 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0 0 10px;
+
+    @media ($m-desktop) {
+      font-size: 14px;
+    }
   }
 
   &__text {
@@ -21,5 +25,13 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0 0 4px;
+
+    @media ($m-desktop) {
+      font-size: 20px;
+    }
+
+    @media ($m-table) {
+      font-size: 20px;
+    }
   }
 }

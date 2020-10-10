@@ -8,6 +8,10 @@
   width: 100%;
   margin: 140px 0;
 
+  @media ($m-desktop) {
+    margin: 106px 0;
+  }
+
   &_full-page {
     height: 100vh;
     width: 100%;

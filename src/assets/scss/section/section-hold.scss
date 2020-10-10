@@ -2,14 +2,27 @@
   display: flex;
 
   &__left {
+    flex-shrink: 0;
     width: 400px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    @media ($m-desktop) {
+      width: 240px;
+    }
+
+    @media ($m-table) {
+      width: 200px;
+    }
   }
 
   &__right {
     width: 770px;
     //min-height: 400px;
+
+    @media ($m-desktop) {
+      width: 722px;
+    }
   }
 }
