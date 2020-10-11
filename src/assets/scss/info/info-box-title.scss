@@ -25,4 +25,33 @@
   .wrapper-theme-dark & {
     color: #fff;
   }
+
+  &_move-left {
+     & .info-box-title__inner {
+       display: flex;
+       align-items: center;
+
+       & span {
+         display: block;
+         padding-right: 50px;
+         white-space: nowrap;
+
+         animation-name: textMoveLeft;
+         animation-duration: 5.83401s;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+         will-change: transform;
+       }
+     }
+  }
+}
+
+@keyframes textMoveLeft {
+  0% {
+    transform: translateX(0) translateZ(0);
+  }
+
+  100% {
+    transform: translateX(-100%) translateZ(0);
+  }
 }
