@@ -25,6 +25,10 @@
     border-top: 1px solid $c-dark;
     margin: 0 0 80px;
 
+    @media ($m-table) {
+      margin: 0 0 60px;
+    }
+
     .wrapper-theme-dark & {
       border-top: 1px solid #fff;
     }

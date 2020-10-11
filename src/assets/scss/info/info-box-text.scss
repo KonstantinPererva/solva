@@ -12,6 +12,10 @@
     font-size: 14px;
   }
 
+  @media ($m-table) {
+    margin: 0 0 30px;
+  }
+
   &_sm {
     width: 170px;
   }

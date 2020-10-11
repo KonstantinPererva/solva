@@ -23,6 +23,10 @@
       transition: 300ms;
       white-space: nowrap;
 
+      @media ($m-table) {
+        @include fzIns(70);
+      }
+
       &:hover {
         border-bottom: 1px solid #fff;
         padding: 0 0 0 60px;

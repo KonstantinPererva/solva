@@ -67,5 +67,5 @@
 }
 
 @mixin fzIns($fzStart) {
-  font-size: calc(100vmin / #{$fzStart} * 10);
+  font-size: calc(#{$fzStart}vmin / 100 * 10);
 }

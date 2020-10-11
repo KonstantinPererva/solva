@@ -5,6 +5,11 @@
     margin: 0 0 40px;
     border-bottom: 1px solid $c-dark;
 
+    @media ($m-table) {
+      padding: 0 0 30px;
+      margin: 0 0 30px;
+    }
+
     .wrapper-theme-dark & {
       border-bottom: 1px solid #fff;
     }

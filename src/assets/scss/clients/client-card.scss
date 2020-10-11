@@ -10,5 +10,9 @@
   &__right {
     width: 170px;
     flex-shrink: 0;
+
+    @media ($m-table) {
+      width: 130px;
+    }
   }
 }
