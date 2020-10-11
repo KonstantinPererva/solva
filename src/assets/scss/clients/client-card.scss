@@ -3,6 +3,10 @@
   align-items: flex-end;
   justify-content: space-between;
 
+  @media ($m-mobile) {
+    display: block;
+  }
+
   &__left {
     flex-grow: 1;
   }

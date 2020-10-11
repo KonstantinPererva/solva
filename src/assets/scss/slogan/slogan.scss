@@ -33,5 +33,9 @@
     @media ($m-table) {
       font-size: 20px;
     }
+
+    @media ($m-mobile) {
+      font-size: 18px;
+    }
   }
 }

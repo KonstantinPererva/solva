@@ -6,6 +6,10 @@
     @media ($m-desktop) {
       margin: 0 0 30px 0;
     }
+
+    @media ($m-mobile) {
+      margin: 0 0 20px 0;
+    }
   }
 
   &_inline {
@@ -21,11 +25,23 @@
       margin: 0 40px 0 0;
     }
 
+    @media ($m-mobile) {
+      margin: 20px 0 0;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
     &:nth-child(n + 3) {
       margin-top: 40px;
 
       @media ($m-desktop) {
         margin-top: 30px;
+      }
+
+      @media ($m-mobile) {
+        margin-top: 20px;
       }
     }
   }

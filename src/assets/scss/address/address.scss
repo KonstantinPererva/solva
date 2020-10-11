@@ -1,6 +1,10 @@
 .address {
   &__row + &__row {
     margin: 10px 0 0;
+
+    @media ($m-mobile) {
+      margin: 5px 0 0;
+    }
   }
 
   &__row {
@@ -41,6 +45,11 @@
     margin: 0 0 10px;
     color: $c-dark;
 
+    @media ($m-mobile) {
+      font-size: 14px;
+      margin: 0 0 5px;
+    }
+
     .wrapper-theme-dark & {
       color: #FFFFFF;
     }
@@ -48,5 +57,9 @@
 
   &__box {
     margin: 0 0 40px;
+
+    @media ($m-mobile) {
+      margin: 0 0 20px;
+    }
   }
 }

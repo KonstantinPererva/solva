@@ -9,12 +9,24 @@
   margin: 140px 0;
 
   @media ($m-desktop) {
-    margin: 106px 0;
+    margin: 108px 0;
+  }
+
+  @media ($m-mobile) {
+    margin: 40px 0;
+
+    &:first-child:not(.section-main) {
+      margin: 108px 0 40px;
+    }
   }
 
   &_full-page {
     height: 100vh;
     width: 100%;
+    
+    @media (max-height: 568px) {
+      height: 568px;
+    }
   }
   
   &__substrate {

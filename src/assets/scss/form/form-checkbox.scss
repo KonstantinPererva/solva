@@ -10,12 +10,21 @@
     letter-spacing: 0.5px;
     color: #101010;
     margin: 0 0 20px;
+
+    @media ($m-mobile) {
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
   }
 
   &__list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    
+    @media ($m-mobile) {
+      display: block;
+    }
 
     & li {
       margin: 0 30px 20px 0;

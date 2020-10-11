@@ -22,12 +22,17 @@
   outline: none;
   user-select: none;
   transition: 150ms;
-  cursor: pointer;
   text-decoration: none;
   text-align: center;
   background: transparent;
   border-radius: 0;
   padding: 0;
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
   &:hover, &:focus, &:active {
     outline: none;

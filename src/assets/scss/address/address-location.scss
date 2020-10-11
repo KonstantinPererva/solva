@@ -2,6 +2,10 @@
   &_line {
     display: flex;
 
+    @media ($m-mobile) {
+      display: block;
+    }
+
     & > * {
       flex-shrink: 0;
       width: 310px;
@@ -10,7 +14,15 @@
       @media ($m-table) {
         width: 250px;
       }
+
+      @media ($m-mobile) {
+        width: 100%;
+      }
     }
+  }
+
+  &__box + &__box {
+    margin: 10px 0 0;
   }
 
   &__country {
@@ -22,6 +34,10 @@
     letter-spacing: 0.75px;
     margin: 0 0 10px;
     color: $c-dark;
+
+    @media ($m-mobile) {
+      font-size: 18px;
+    }
 
     .wrapper-theme-dark & {
       color: #FFFFFF;
@@ -36,6 +52,10 @@
     line-height: 150%;
     letter-spacing: 0.5px;
     color: $c-dark;
+
+    @media ($m-mobile) {
+      font-size: 14px;
+    }
 
     .wrapper-theme-dark & {
       color: #FFFFFF;

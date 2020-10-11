@@ -1,8 +1,19 @@
 .s-net-list {
+  .footer & {
+    @media ($m-mobile) {
+      width: 280px;
+    }
+  }
 
   &_line {
     display: flex;
     align-items: center;
+
+    .footer & {
+      @media ($m-mobile) {
+        flex-wrap: wrap;
+      }
+    }
   }
 
   &__item {
@@ -34,6 +45,13 @@
 
   &_line &__item {
     margin: 0 32px 0 0;
+
+    .footer & {
+      @media ($m-mobile) {
+        width: 50%;
+        margin: 0 0 5px;
+      }
+    }
   }
 }
 

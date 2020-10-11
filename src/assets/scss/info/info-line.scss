@@ -7,6 +7,10 @@
     margin: 30px 0;
   }
 
+  @media ($m-mobile) {
+    //display: none;
+  }
+
   .wrapper-theme-dark & {
     border-bottom: 1px solid #fff;
   }

@@ -1,6 +1,15 @@
 .info-group-photo {
   display: flex;
 
+  @media ($m-mobile) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 400px) {
+    margin-left: -75px;
+    justify-content: center;
+  }
+
   &__left {
     flex-shrink: 0;
     margin: 0 30px 0 0;
@@ -8,13 +17,29 @@
     @media ($m-table) {
       margin: 0 20px 0 0;
     }
+
+    @media ($m-mobile) {
+      width: 130px;
+      margin-right: 20px;
+    }
   }
 
   &__right {
     flex-grow: 1;
 
+    @media ($m-mobile) {
+      width: 130px;
+      flex-grow: 0;
+    }
+
     & img {
       width: 100%;
     }
+  }
+  
+  &__btn {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0;
   }
 }

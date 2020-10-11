@@ -8,4 +8,10 @@
   & img {
     display: block;
   }
+
+  .section-hold__right & {
+    @media ($m-mobile) {
+      margin-left: -75px;
+    }
+  }
 }

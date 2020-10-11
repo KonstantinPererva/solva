@@ -5,6 +5,10 @@
     justify-content: space-between;
   }
 
+  @media ($m-mobile) {
+    flex-direction: column;
+  }
+
   &:hover {
     & .works-card__img .wr-img {
       height: 270px;
@@ -26,10 +30,12 @@
 
     @media ($m-desktop) {
       font-size: 20px;
+      margin: 0;
     }
 
-    @media ($m-desktop) {
-      margin: 0;
+    @media ($m-mobile) {
+      order: 1;
+      margin: 0 0 20px;
     }
 
     .wrapper-theme-dark & {
@@ -71,7 +77,13 @@
     margin: 0 30px 0 0;
 
     @media ($m-desktop) {
+      width: 170px;
       margin: 0;
+    }
+
+    @media ($m-mobile) {
+      width: 130px;
+      order: 3;
     }
   }
 
@@ -94,6 +106,12 @@
     @media ($m-desktop) {
       font-size: 14px;
       width: 70px;
+    }
+
+    @media ($m-mobile) {
+      width: 205px;
+      order: 2;
+      margin: 0 0 20px;
     }
 
     .wrapper-theme-dark & {

@@ -5,4 +5,8 @@
   @media ($m-desktop) {
     padding: 50px 0;
   }
+
+  @media ($m-mobile) {
+    padding: 20px 0 15px;
+  }
 }

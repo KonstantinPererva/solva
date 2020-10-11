@@ -17,6 +17,10 @@
   @media ($m-table) {
     font-size: 46px;
   }
+
+  @media ($m-mobile) {
+    font-size: 32px;
+  }
   
   .wrapper-theme-dark & {
     color: #fff;

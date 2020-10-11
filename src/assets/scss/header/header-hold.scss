@@ -7,6 +7,10 @@
   height: 100px;
   transition: 300ms;
 
+  @media ($m-mobile) {
+    height: 68px;
+  }
+
   .header.header-fixed & {
     height: 68px;
   }

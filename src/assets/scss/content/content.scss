@@ -12,6 +12,10 @@
     max-width: 738px;
   }
 
+  @media ($m-mobile) {
+    padding: 0 20px;
+  }
+
   .section-main & {
     display: flex;
     align-items: center;
@@ -27,6 +31,10 @@
 
     @media ($m-table) {
       margin: 0 0 60px;
+    }
+
+    @media ($m-mobile) {
+      margin: 0 0 40px;
     }
 
     .wrapper-theme-dark & {

@@ -14,6 +14,10 @@
     margin: 0 0 5px;
   }
 
+  @media ($m-mobile) {
+    font-size: 18px;
+  }
+
   .wrapper-theme-dark & {
     color: #fff;
   }

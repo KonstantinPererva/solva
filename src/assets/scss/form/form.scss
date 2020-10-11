@@ -3,5 +3,9 @@
   &__submit {
     margin: 10px 0 0;
     text-align: center;
+
+    @media ($m-mobile) {
+      text-align: left;
+    }
   }
 }

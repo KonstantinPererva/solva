@@ -2,6 +2,10 @@
   margin: 0 0 140px;
 
   @media ($m-desktop) {
-    margin: 0 0 106px;
+    margin: 0 0 108px;
+  }
+
+  @media ($m-mobile) {
+    margin: 0 0 40px;
   }
 }

@@ -50,3 +50,28 @@ img {
     bottom: 0;
   }
 }
+
+.box-desktop {
+  display: block !important;
+}
+
+.box-mob {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .box-desktop {
+    display: none !important;
+  }
+
+  .box-mob {
+    display: block !important;
+  }
+}
+
+.wr-gif {
+  @media ($m-mobile) {
+    margin: 20px 0 40px;
+    width: 205px;
+  }
+}

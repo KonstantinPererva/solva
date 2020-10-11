@@ -1,23 +1,50 @@
 .footer-hold {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;padding: 0 0 40px;
+  align-items: flex-end;
+  padding: 0 0 40px;
   border-bottom: 1px solid $c-dark;
 
+  @media ($m-mobile) {
+    flex-direction: column-reverse;
+    border-bottom: 0;
+  }
+
   .wrapper-theme-dark  & {
-    border-bottom: 1px solid #fff;
+    border-color: #fff;
   }
 
   @media ($m-desktop) {
     padding: 0 0 30px;
   }
 
+  @media ($m-mobile) {
+    padding: 0;
+  }
+
   &__left {
     flex-shrink: 0;
+
+    @media ($m-mobile) {
+      padding: 20px 0 0;
+      border-top: 1px solid $c-dark;
+      width: 100%;
+    }
+
+    .wrapper-theme-dark  & {
+
+      @media ($m-mobile) {
+        border-color: #fff;
+      }
+    }
   }
 
   &__right {
     flex-shrink: 0;
     text-align: right;
+
+    @media ($m-mobile) {
+      padding: 0 0 20px;
+    }
   }
 }

@@ -3,6 +3,10 @@
   height: 51px;
   transition: 300ms;
 
+  @media ($m-mobile) {
+    height: 36px;
+  }
+
   .header.header-fixed & {
     height: 36px;
   }

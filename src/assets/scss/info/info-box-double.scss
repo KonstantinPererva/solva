@@ -1,6 +1,16 @@
 .info-box-double {
   display: flex;
 
+  @media ($m-mobile) {
+    display: block;
+
+    &_m-bl-reverse {
+      display: flex;
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+  }
+
   & + & {
     margin-top: 80px;
   }
@@ -17,9 +27,34 @@
     @media ($m-table) {
       margin: 0 40px 0 0;
     }
+
+    @media ($m-mobile) {
+      margin: 0 0 40px;
+    }
+
+    & > .info-img-small {
+      width: 130px;
+    }
   }
 
   &__right {
+    & > .info-img-small {
 
+      @media ($m-mobile) {
+        width: 130px;
+      }
+    }
+    
+    & .wr-button {
+      @media ($m-mobile) {
+        text-align: right;
+      }
+      
+      & .button-corner {
+        @media ($m-mobile) {
+          margin: 0;
+        }
+      }
+    }
   }
 }

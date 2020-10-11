@@ -14,9 +14,10 @@
   letter-spacing: 0.5px;
   color: $c-dark;
 
-  @media ($m-phone) {
+  @media ($m-mobile) {
     min-width: 130px;
     padding: 0 15px;
+    font-size: 14px;
   }
 
   .info-box-double__right & {
@@ -25,6 +26,10 @@
     @media ($m-table) {
       margin-left: 50px;
     }
+  }
+
+  .info-group-photo__btn & {
+    margin: 0;
   }
   
   .wrapper-theme-dark & {
