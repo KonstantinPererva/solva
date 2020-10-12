@@ -9,6 +9,9 @@
 
   @media ($m-mobile) {
     //display: none;
+    &.box-mob {
+      margin: 40px 0;
+    }
   }
 
   .wrapper-theme-dark & {

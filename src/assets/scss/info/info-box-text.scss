@@ -17,7 +17,11 @@
   }
 
   @media ($m-mobile) {
-    margin: 0 0 20px;
+    margin: 0 0 40px;
+
+    .info-box-double__right & {
+      margin: 0 0 20px;
+    }
   }
 
   &_sm {
