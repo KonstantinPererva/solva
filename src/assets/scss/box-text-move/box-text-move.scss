@@ -1,3 +1,104 @@
 .box-text-move {
+  &__item {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 
+    &_right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__item + &__item {
+    margin: 80px 0 0;
+
+    @media ($m-desktop) {
+      margin: 40px 0 0;
+    }
+
+    @media ($m-mobile) {
+      margin: 20px 0 0;
+    }
+  }
+}
+
+.wr-box-text-move {
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  &__inner {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
+
+.box-text-move-title {
+  font-family: $ff-m;
+  font-style: normal;
+  font-weight: $fw-m-r;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: $c-dark;
+  margin: 0 0 20px;
+  display: inline-block;
+  margin-left: 60vw;
+
+  @media ($m-table) {
+    font-size: 14px;
+  }
+
+  @media ($m-mobile) {
+    margin: 0;
+    margin-left: 30vw;
+  }
+
+  .wrapper-theme-dark & {
+    color: #fff;
+  }
+}
+
+.box-text-move-descr {
+  font-family: $ff-o;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 120%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $c-dark;
+  white-space: nowrap;
+
+  @media ($m-desktop) {
+    font-size: 70px;
+  }
+
+  @media ($m-table) {
+    font-size: 46px;
+  }
+
+  @media ($m-mobile) {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 156%;
+    letter-spacing: 0.5px;
+  }
+
+  .wrapper-theme-dark & {
+    color: #fff;
+  }
+
+  & span {
+    flex-shrink: 0;
+    display: block;
+    padding-right: 150px;
+
+    @media ($m-desktop) {
+      padding-right: 100px;
+    }
+
+    @media ($m-mobile) {
+      padding-right: 50px;
+    }
+  }
 }

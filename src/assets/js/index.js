@@ -53,6 +53,21 @@ window.addEventListener('load', function ()
             }
         }
 
+        var moveDescr = document.querySelectorAll('[data-node-text-move="box-text-move-descr"]');
+
+        if (moveDescr.length)
+        {
+            var moveDescrItems = [].slice.call(document.querySelectorAll('[data-node-text-move="box-text-move-descr"]'));
+
+            for (let i = 0; i < moveDescrItems.length; i++)
+            {
+                new Marquee(moveDescrItems[i],
+                    {
+                        velocity: 1.2
+                    })
+            }
+        }
+
         var btnToggle = document.querySelector('.button-toggle');
         var menu = document.querySelector('.menu');
         var popup = document.querySelector('.popup');
