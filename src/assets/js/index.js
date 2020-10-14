@@ -23,51 +23,62 @@ function Marquee (node, opt)
 
 window.addEventListener('load', function ()
     {
-        var moveBox = document.querySelectorAll('.info-box-title_move-left');
 
-        if (moveBox.length)
-        {
-            var moveBoxItems = [].slice.call(document.querySelectorAll('.info-box-title_move-left'));
+//////////////////////////////////////////////////////////////////////////////////////////////////
+        //move text --- marquee
+        function initMoveText() {
+            var moveBox = document.querySelectorAll('.info-box-title_move-left');
 
-            for (let i = 0; i < moveBoxItems.length; i++)
+            if (moveBox.length)
             {
-                new Marquee(moveBoxItems[i],
-                    {
-                        velocity: .5
-                    })
+                var moveBoxItems = [].slice.call(document.querySelectorAll('.info-box-title_move-left'));
+
+                for (let i = 0; i < moveBoxItems.length; i++)
+                {
+                    new Marquee(moveBoxItems[i],
+                        {
+                            velocity: .5
+                        })
+                }
+            }
+
+            var moveWorks = document.querySelectorAll('[data-node-text-move="works"]');
+
+            if (moveWorks.length)
+            {
+                var moveWorksItems = [].slice.call(document.querySelectorAll('[data-node-text-move="works"]'));
+
+                for (let i = 0; i < moveWorksItems.length; i++)
+                {
+                    new Marquee(moveWorksItems[i],
+                        {
+                            velocity: .5
+                        })
+                }
+            }
+
+            var moveDescr = document.querySelectorAll('[data-node-text-move="box-text-move-descr"]');
+
+            if (moveDescr.length)
+            {
+                var moveDescrItems = [].slice.call(document.querySelectorAll('[data-node-text-move="box-text-move-descr"]'));
+
+                for (let i = 0; i < moveDescrItems.length; i++)
+                {
+                    new Marquee(moveDescrItems[i],
+                        {
+                            velocity: 1.2
+                        })
+                }
             }
         }
 
-        var moveWorks = document.querySelectorAll('[data-node-text-move="works"]');
+        initMoveText();
 
-        if (moveWorks.length)
-        {
-            var moveWorksItems = [].slice.call(document.querySelectorAll('[data-node-text-move="works"]'));
+        window.addEventListener('resize', initMoveText);
 
-            for (let i = 0; i < moveWorksItems.length; i++)
-            {
-                new Marquee(moveWorksItems[i],
-                    {
-                        velocity: 1
-                    })
-            }
-        }
-
-        var moveDescr = document.querySelectorAll('[data-node-text-move="box-text-move-descr"]');
-
-        if (moveDescr.length)
-        {
-            var moveDescrItems = [].slice.call(document.querySelectorAll('[data-node-text-move="box-text-move-descr"]'));
-
-            for (let i = 0; i < moveDescrItems.length; i++)
-            {
-                new Marquee(moveDescrItems[i],
-                    {
-                        velocity: 1.2
-                    })
-            }
-        }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
+        // variables for menu and popup
         var btnToggle = document.querySelector('.button-toggle');
         var menu = document.querySelector('.menu');
         var popup = document.querySelector('.popup');
@@ -77,6 +88,7 @@ window.addEventListener('load', function ()
         var labelForm = document.querySelectorAll('.form-field-label');
         var body = document.body;
 
+        //open---close menu and popup success
         var status =
         {
             menuOpen: false,
@@ -105,6 +117,7 @@ window.addEventListener('load', function ()
             });
         }
 
+        //open popup success
         if (btnSubmit)
         {
             btnSubmit.addEventListener("click", function() {
@@ -115,6 +128,8 @@ window.addEventListener('load', function ()
             });
         }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+        //slider photo gallery
         function initCarousel() {
             var photoGallery = new Swiper('.photo-gallery', {
                 // loop: true,
@@ -141,6 +156,8 @@ window.addEventListener('load', function ()
             initCarousel()
         }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+        //placeholder
         if (labelForm.length)
         {
             for(let i = 0; i < labelForm.length; i++)
@@ -159,6 +176,8 @@ window.addEventListener('load', function ()
             }
         }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+        //header
         if(window.scrollY)
         {
             header.classList.add('header-fixed');
@@ -175,5 +194,7 @@ window.addEventListener('load', function ()
                 header.classList.remove('header-fixed');
             }
         });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
     }
 );

@@ -82,6 +82,10 @@ img {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   will-change: transform;
+
+  [data-node-text-move="works"] .box-text-move__item:hover & {
+    animation-play-state:paused;
+  }
 }
 
 [data-text-move="right"] {
@@ -90,6 +94,10 @@ img {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   will-change: transform;
+
+  [data-node-text-move="works"] .box-text-move__item:hover & {
+    animation-play-state:paused;
+  }
 }
 
 @keyframes textMoveLeft {
