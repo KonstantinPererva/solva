@@ -1,8 +1,20 @@
 .menu-list {
   width: 385px;
 
+  @media ($m-mobile) {
+    width: 100%;
+  }
+
   &__item {
     margin: 0 0 2vmin;
+
+    @media ($m-mobile) {
+      margin: 30px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
     &:last-child {
       margin: 0;
@@ -10,6 +22,7 @@
 
     & a {
       display: inline-block;
+      vertical-align: top;
       font-family: $ff-o;
       font-style: normal;
       font-weight: normal;
@@ -25,6 +38,10 @@
 
       @media ($m-table) {
         @include fzIns(70);
+      }
+
+      @media ($m-mobile) {
+        font-size: 32px;
       }
 
       &:hover {

@@ -19,6 +19,16 @@
   &__item {
     margin: 0 0 10px;
 
+    .menu & {
+      @media ($m-mobile) {
+        margin: 0 0 14px;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
     & a {
       white-space: nowrap;
       font-family: $ff-m;
@@ -53,8 +63,4 @@
       }
     }
   }
-}
-
-@keyframes line {
-
 }

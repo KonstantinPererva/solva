@@ -46,5 +46,10 @@
     display: flex;
     justify-content: center;
     position: relative;
+
+    @media ($m-mobile) {
+      height: 100%;
+      position: static;
+    }
   }
 }

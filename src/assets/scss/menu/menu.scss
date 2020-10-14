@@ -9,6 +9,10 @@
   z-index: 2900;
   background: $c-dark_2;
 
+  @media ($m-mobile) {
+    padding: 80px 0 150px;
+  }
+
   &.open {
     display: block;
   }

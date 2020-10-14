@@ -23,6 +23,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0 0 20px;
+
+    @media ($m-mobile) {
+      margin: 0 0 5px;
+      font-size: 18px;
+    }
   }
 
   &__text {
@@ -35,5 +40,9 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0 0 20px;
+
+    @media ($m-mobile) {
+      font-size: 14px;
+    }
   }
 }

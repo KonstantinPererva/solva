@@ -9,6 +9,10 @@
   color: #FFFFFF;
   border-bottom: 1px solid #fff;
 
+  @media ($m-mobile) {
+    font-size: 14px;
+  }
+
   &:hover {
     border-bottom: 1px solid transparent;
   }

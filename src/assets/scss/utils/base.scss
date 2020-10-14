@@ -41,13 +41,21 @@ img {
     display: block;
     height: 1px;
     width: 0;
-    background: #fff;
+    background: $c-dark;
     transition: 250ms;
     font-size: 0;
     line-height: 0;
     position: absolute;
     right: 0;
     bottom: 0;
+
+    .wrapper-theme-dark & {
+      background: #fff;
+    }
+
+    .menu & {
+      background: #fff;
+    }
   }
 }
 

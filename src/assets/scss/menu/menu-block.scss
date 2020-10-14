@@ -7,4 +7,15 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: right;
+  padding: 0 15px 0 0;
+
+  @media ($m-mobile) {
+    top: auto;
+    width: 100%;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 20px 20px 20px;
+  }
 }
