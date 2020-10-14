@@ -38,17 +38,17 @@ window.addEventListener('load', function ()
             }
         }
 
-        var moveB = document.querySelectorAll('[data-node-text-move]');
+        var moveWorks = document.querySelectorAll('[data-node-text-move="works"]');
 
-        if (moveB.length)
+        if (moveWorks.length)
         {
-            var moveBItems = [].slice.call(document.querySelectorAll('[data-node-text-move]'));
+            var moveWorksItems = [].slice.call(document.querySelectorAll('[data-node-text-move="works"]'));
 
-            for (let i = 0; i < moveBItems.length; i++)
+            for (let i = 0; i < moveWorksItems.length; i++)
             {
-                new Marquee(moveBItems[i],
+                new Marquee(moveWorksItems[i],
                     {
-                        velocity: .5
+                        velocity: 1
                     })
             }
         }
@@ -116,7 +116,7 @@ window.addEventListener('load', function ()
         }
 
         function initCarousel() {
-            var photoGallery = new Swiper('.swiper-container', {
+            var photoGallery = new Swiper('.photo-gallery', {
                 // loop: true,
                 speed: 800,
                 autoplay: {
