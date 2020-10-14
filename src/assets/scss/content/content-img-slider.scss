@@ -1,5 +1,9 @@
 .content-img-slider {
   .section-page & {
     margin: 40px 0 0;
+
+    @media ($m-mobile) {
+      margin: 20px 0 60px;
+    }
   }
 }

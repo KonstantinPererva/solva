@@ -25,9 +25,23 @@
 .wr-box-text-move {
   margin-left: -50vw;
   margin-right: -50vw;
-
   margin-top: 40px;
   margin-bottom: 80px;
+
+  @media ($m-desktop) {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  @media ($m-table) {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  @media ($m-mobile) {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 
   &_n-m {
     margin-top: 0;
@@ -52,8 +66,13 @@
   display: inline-block;
   margin-left: 60vw;
 
+  @media ($m-desktop) {
+    margin-left: 46vw;
+  }
+
   @media ($m-table) {
     font-size: 14px;
+    margin-left: 46vw;
   }
 
   @media ($m-mobile) {

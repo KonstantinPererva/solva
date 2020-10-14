@@ -45,7 +45,11 @@
     }
 
     @media ($m-mobile) {
-      margin: 0 20px 0 0;
+      margin: 20px 0 0;
+
+      &:first-child {
+        margin: 0;
+      }
     }
 
     &:nth-child(n + 3) {
