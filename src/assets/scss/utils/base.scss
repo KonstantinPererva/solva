@@ -77,7 +77,27 @@ img {
 }
 
 .box-text-move {
-  display: flex;
+
+  &__item {
+    overflow: hidden;
+    display: flex;
+
+    &_right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__item + &__item {
+    margin: 80px 0 0;
+
+    @media ($m-desktop) {
+      margin: 40px 0 0;
+    }
+
+    @media ($m-mobile) {
+      margin: 20px 0 0;
+    }
+  }
 }
 
 [data-text-move="left"] {

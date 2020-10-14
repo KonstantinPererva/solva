@@ -1,5 +1,6 @@
 .content-list {
-  .box-move-text-left & {
+  .box-text-move & {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
   }
@@ -7,9 +8,18 @@
   &__item {
     margin: 0 0 40px 0;
 
-    .box-move-text-left & {
-      padding-right: 50px;
+    .box-text-move & {
+      flex-shrink: 0;
+      padding-right: 150px;
       margin: 0;
+
+      @media ($m-desktop) {
+        padding-right: 100px;
+      }
+
+      @media ($m-mobile) {
+        padding-right: 50px;
+      }
     }
 
     @media ($m-desktop) {

@@ -37,7 +37,9 @@
     }
 
     & > .info-img-small {
-      width: 130px;
+      @media ($m-mobile) {
+        width: 130px;
+      }
     }
   }
 

@@ -29,5 +29,17 @@
     @media ($m-desktop) {
       width: 722px;
     }
+
+    @media ($m-table) {
+      width: 722px;
+    }
+
+    @media ($m-mobile) {
+      width: 722px;
+    }
+
+    &_move-box {
+      width: 100vw;
+    }
   }
 }

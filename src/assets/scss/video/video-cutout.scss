@@ -278,6 +278,11 @@
       opacity: 1;
       background: transparent;
 
+      @media ($m-mobile) {
+        opacity: .98;
+        background-color: #1d1d1d;
+      }
+
       &:after {
         position: absolute;
         top: 0;

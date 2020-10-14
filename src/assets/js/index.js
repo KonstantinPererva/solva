@@ -3,8 +3,6 @@ function Marquee (node, opt)
     var self = this;
     self.node = node;
     self.text = self.node.querySelectorAll('[data-text-move]');
-    self.textSingle = self.text[0];
-    self.width = self.textSingle.getBoundingClientRect().right - self.textSingle.getBoundingClientRect().left;
     self.opt = opt;
     self.distance = 100;
     self.time = 1000;
@@ -14,12 +12,12 @@ function Marquee (node, opt)
                     velocity: 1
                 }
                 ,
-                    self.opt
+                self.opt
     );
 
     for (let i = 0; i < self.text.length; i++)
     {
-        self.text[i].style.animationDuration = self.width / (self.distance * self.option.velocity) * self.time + 'ms';
+        self.text[i].style.animationDuration = (self.text[i].getBoundingClientRect().right - self.text[i].getBoundingClientRect().left) / (self.distance * self.option.velocity) * self.time + 'ms';
     }
 }
 
@@ -161,6 +159,6 @@ window.addEventListener('load', function ()
             } else {
                 header.classList.remove('header-fixed');
             }
-        })
+        });
     }
 );
