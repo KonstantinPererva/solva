@@ -2,7 +2,6 @@
 @import "utils/mixins";
 @import "utils/normalize";
 @import "utils/reset";
-@import "utils/base";
 
 
 @import "wrapper/style";
@@ -26,3 +25,7 @@
 @import "photo-gallery/style";
 @import "ripples-box/style";
 @import "box-text-move/style";
+
+
+
+@import "utils/base";

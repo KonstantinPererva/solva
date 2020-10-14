@@ -76,11 +76,6 @@ img {
   }
 }
 
-.box-text-move {
-
-
-}
-
 [data-text-move="left"] {
   animation-name: textMoveLeft;
   animation-duration: 5.83401s;
@@ -117,29 +112,28 @@ img {
   }
 }
 
-
 @media ($m-mobile) {
   .mob-m-t-n {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 
   .mob-m-t-20 {
-    margin-top: 20px;
+    margin-top: 20px !important;
   }
 
   .mob-m-t-40 {
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
 
   .mob-m-b-n {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
 
   .mob-m-b-20 {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
 
   .mob-m-b-40 {
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
   }
 }
