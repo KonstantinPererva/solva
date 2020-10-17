@@ -2,6 +2,12 @@
   display: block;
   margin: 40px 0;
   border-bottom: 1px solid $c-dark;
+  width: 0;
+  transition: 600ms;
+
+  &.animate {
+    width: 100%;
+  }
 
   @media ($m-table) {
     margin: 30px 0;

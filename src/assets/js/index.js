@@ -83,9 +83,7 @@ window.addEventListener('load', function ()
         var menu = document.querySelector('.menu');
         var popup = document.querySelector('.popup');
         var btnSubmit = document.querySelector('.button-form-submit');
-        var photo = document.querySelector('.photo-gallery');
         var header = document.querySelector('.header');
-        var labelForm = document.querySelectorAll('.form-field-label');
         var body = document.body;
 
         //open---close menu and popup success
@@ -130,6 +128,8 @@ window.addEventListener('load', function ()
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
         //slider photo gallery
+        var photo = document.querySelector('.photo-gallery');
+
         function initCarousel() {
             var photoGallery = new Swiper('.photo-gallery', {
                 // loop: true,
@@ -158,6 +158,8 @@ window.addEventListener('load', function ()
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
         //placeholder
+        var labelForm = document.querySelectorAll('.form-field-label');
+
         if (labelForm.length)
         {
             for(let i = 0; i < labelForm.length; i++)
@@ -196,5 +198,37 @@ window.addEventListener('load', function ()
         });
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
+    var options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3
+    };
+
+    var callback = function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('animate')) {
+                entry.target.classList.add('animate');
+            }
+
+        });
+    };
+
+    var observer = new IntersectionObserver(callback, options);
+
+    var contentLine = document.querySelectorAll('.content__line');
+    var infoLine = document.querySelectorAll('.info-line');
+
+    for (let i = 0; i < contentLine.length; i++)
+    {
+        let line = contentLine[i];
+        observer.observe(line);
     }
-);
+
+    for (let i = 0; i < infoLine.length; i++)
+    {
+        let line = infoLine[i];
+        observer.observe(line);
+    }
+
+});
