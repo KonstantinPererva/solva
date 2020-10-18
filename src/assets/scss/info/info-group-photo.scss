@@ -1,13 +1,15 @@
 .info-group-photo {
-  display: flex;
+  &__inner {
+    display: flex;
 
-  @media ($m-mobile) {
-    flex-wrap: wrap;
-  }
+    @media ($m-mobile) {
+      flex-wrap: wrap;
+    }
 
-  @media (max-width: 400px) {
-    margin-left: -75px;
-    justify-content: center;
+    @media (max-width: 400px) {
+      margin-left: -75px;
+      justify-content: center;
+    }
   }
 
   &__left {

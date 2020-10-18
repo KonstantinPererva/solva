@@ -44,9 +44,11 @@
         font-size: 32px;
       }
 
-      &:hover {
-        border-bottom: 1px solid #fff;
-        padding: 0 0 0 60px;
+      @media (hover: hover) {
+        &:hover {
+          border-bottom: 1px solid #fff;
+          padding: 0 0 0 60px;
+        }
       }
     }
   }

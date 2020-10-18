@@ -10,6 +10,14 @@
   <link rel="stylesheet" href="assets/libs/swiper/swiper.css">
 </head>
 <body>
+<script>
+    document.body.style.opacity = '0';
+
+    window.addEventListener('load', function () {
+        document.body.style.transition = '300ms';
+        document.body.style.opacity = '1';
+    })
+</script>
 
 <div class="wrapper">
   <div class="menu">
@@ -628,6 +636,10 @@
               </div>
             </div>
           </div>
+
+          <div class="photo-gallery-pagination">
+            <div class="pagination-bullets-box"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -895,5 +907,6 @@
 </div>
 
 <script src="assets/libs/swiper/swiper.js"></script>
+<script src="assets/libs/wow/wow.min.js"></script>
 </body>
 </html>

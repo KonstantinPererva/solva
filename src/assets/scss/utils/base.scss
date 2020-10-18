@@ -28,11 +28,13 @@ img {
 
 .link-m-u {
   position: relative;
-  
-  &:hover {
-    &:after {
-      left: 0;
-      width: 100%;
+
+  @media (hover:hover) {
+    &:hover {
+      &:after {
+        left: 0;
+        width: 100%;
+      }
     }
   }
 

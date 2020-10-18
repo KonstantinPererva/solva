@@ -100,15 +100,24 @@ window.addEventListener('load', function ()
                     status.menuOpen = true;
                     btnToggle.classList.add('open');
                     menu.classList.add('open');
+                    setTimeout(function () {
+                        menu.style.opacity = '1';
+                    },10);
                     body.classList.add('in-open-popup');
                 } else if (status.menuOpen) {
                     status.menuOpen = false;
                     btnToggle.classList.remove('open');
-                    menu.classList.remove('open');
+                    menu.style.opacity = '0';
+                    setTimeout(function () {
+                        menu.classList.remove('open');
+                    },300);
                     body.classList.remove('in-open-popup');
                 } else if (status.popupOpen) {
                     status.popupOpen = false;
-                    popup.classList.remove('open');
+                    popup.style.opacity = '0';
+                    setTimeout(function () {
+                        popup.classList.remove('open');
+                    },300);
                     btnToggle.classList.remove('open');
                     body.classList.remove('in-open-popup');
                 }
@@ -121,6 +130,9 @@ window.addEventListener('load', function ()
             btnSubmit.addEventListener("click", function() {
                 status.popupOpen = true;
                 popup.classList.add('open');
+                setTimeout(function () {
+                    popup.style.opacity = '1';
+                },10);
                 btnToggle.classList.add('open');
                 body.classList.add('in-open-popup');
             });
@@ -141,11 +153,11 @@ window.addEventListener('load', function ()
                 // mousewheel: true,
                 paused: false,
                 disableOnInteraction: false,
-                // pagination: {
-                //     el: '.reviews-slider-pagination',
-                //     type: 'bullets',
-                //     clickable: true
-                // },
+                pagination: {
+                    el: '.pagination-bullets-box',
+                    type: 'bullets',
+                    clickable: true
+                },
                 spaceBetween: 30,
                 slidesPerView: 1
             });
@@ -199,36 +211,125 @@ window.addEventListener('load', function ()
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-    var options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.3
-    };
+    function animation()
+    {
+        var self = this;
 
-    var callback = function(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.classList.contains('animate')) {
-                entry.target.classList.add('animate');
-            }
+        self.options =
+        {
+            root: null,
+            rootMargin: '0px',
+            threshold: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
+        };
 
-        });
-    };
+        self.callback = function (entries, observer)
+        {
+            entries.forEach(entry =>
+            {
+                if (!entry.target.classList.contains('animate') && Math.round((entry.intersectionRatio * 100) * 100 / 100)  >= 50) {
+                    entry.target.classList.add('animate');
+                }
 
-    var observer = new IntersectionObserver(callback, options);
+            });
+        };
 
+        let observer = new IntersectionObserver(self.callback, self.options);
+
+        var contentLine = document.querySelectorAll('.content__line');
+        var infoLine = document.querySelectorAll('.info-line');
+        var infoDescr = document.querySelectorAll('.info__descr');
+        var infoText = document.querySelectorAll('.info-box-text');
+
+        for (let i = 0; i < contentLine.length; i++)
+        {
+            let line = contentLine[i];
+            observer.observe(line);
+        }
+
+        for (let i = 0; i < infoLine.length; i++)
+        {
+            let line = infoLine[i];
+            observer.observe(line);
+        }
+
+        for (let i = 0; i < infoDescr.length; i++)
+        {
+            let box = infoDescr[i];
+            observer.observe(box);
+        }
+
+        for (let i = 0; i < infoText.length; i++)
+        {
+            let box = infoText[i];
+            observer.observe(box);
+        }
+    }
+});
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
     var contentLine = document.querySelectorAll('.content__line');
     var infoLine = document.querySelectorAll('.info-line');
 
-    for (let i = 0; i < contentLine.length; i++)
+    var infoGroupPhoto = document.querySelectorAll('.info-group-photo');
+    var infoBoxImg = document.querySelectorAll('.info-box-img');
+    var wrGif = document.querySelectorAll('.wr-gif');
+    var infoImgSmall = document.querySelectorAll('.info-img-small');
+
+    var sectionTitle = document.querySelectorAll('.section-title');
+    var infoBoxText = document.querySelectorAll('.info-box-text');
+    var contentList = document.querySelectorAll('.content-list');
+    var buttonCorner = document.querySelectorAll('.button-corner');
+    var infoBoxTitle = document.querySelectorAll('.info-box-title');
+    var boxTextMove = document.querySelectorAll('.box-text-move');
+    var footer = document.querySelectorAll('.footer');
+
+    var clientListItem = document.querySelectorAll('.client-list__item');
+    var boxTextMoveTitle = document.querySelectorAll('.box-text-move-title');
+
+    var worksListItem = document.querySelectorAll('.works-list__item');
+    var formCheckbox = document.querySelectorAll('.form-checkbox');
+    var formFieldRow = document.querySelectorAll('.form-field__row');
+
+    var classAnim;
+
+    var listElAnim = [formFieldRow,formCheckbox,worksListItem,infoLine,contentLine,boxTextMoveTitle,clientListItem,sectionTitle,infoBoxText,contentList,buttonCorner,infoBoxTitle,boxTextMove,footer,infoGroupPhoto,infoBoxImg,wrGif,infoImgSmall];
+
+    for (let i = 0; i < listElAnim.length; i ++)
     {
-        let line = contentLine[i];
-        observer.observe(line);
+        if (listElAnim[i].length)
+        {
+            if (
+                listElAnim[i] === infoGroupPhoto ||
+                listElAnim[i] === infoBoxImg ||
+                listElAnim[i] === wrGif ||
+                listElAnim[i] === infoImgSmall
+            )
+            {
+                classAnim = 'heightIn';
+            }
+            else if  (
+                listElAnim[i] === contentLine ||
+                listElAnim[i] === infoLine
+            )
+            {
+                classAnim = 'widthIn';
+            }
+            else
+            {
+                classAnim = 'fadeIn';
+            }
+
+            for(let j = 0; j < listElAnim[i].length; j++)
+            {
+                listElAnim[i][j].classList.add(classAnim);
+            }
+
+            new WOW(
+                {
+                    boxClass:     classAnim,
+                    offset: 50,
+                }
+            ).init();
+        }
     }
 
-    for (let i = 0; i < infoLine.length; i++)
-    {
-        let line = infoLine[i];
-        observer.observe(line);
-    }
-
-});

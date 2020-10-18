@@ -3,8 +3,8 @@
   justify-content: flex-end;
   height: 50px;
 
-  &:hover {
-    @media (hover: hover) {
+  @media (hover: hover) {
+    &:hover {
       .button-hidden-text__text {
         width: 144px;
       }

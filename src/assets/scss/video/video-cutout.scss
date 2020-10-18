@@ -20,9 +20,11 @@
     transition: opacity 1s var(--easing);
     transition-delay: 0.3s;
 
-    &:hover {
-      opacity: 0;
-      transition-delay: 0s !important;
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0;
+        transition-delay: 0s !important;
+      }
     }
 
     &:nth-child(1) {

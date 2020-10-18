@@ -9,9 +9,11 @@
     flex-direction: column;
   }
 
-  &:hover {
-    & .works-card__img .wr-img {
-      height: 270px;
+  @media (hover:hover) {
+    &:hover {
+      & .works-card__img .wr-img {
+        height: 270px;
+      }
     }
   }
 

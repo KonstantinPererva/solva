@@ -8,10 +8,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body style="background: #101010;">
+<script>
+  document.body.style.opacity = '0';
+
+  window.addEventListener('load', function () {
+      document.body.style.transition = '300ms';
+      document.body.style.opacity = '1';
+  })
+</script>
 
 <div class="wrapper wrapper-theme-dark">
-  <div class="menu" style="display: none">
+  <div class="menu">
     <div class="content">
       <div class="menu-list">
         <div class="menu-list__item">
@@ -171,7 +179,7 @@
       </div>
     </div>
 
-    <div class="section section-page" id="testBox">
+    <div class="section section-page">
       <div class="content">
         <span class="content__line"></span>
 
@@ -208,18 +216,20 @@
 
                 <div class="info-box-double__right">
                   <div class="info-group-photo">
-                    <div class="info-group-photo__left">
-                      <div class="info-img-small">
-                        <img src="assets/img/img_1.jpg" alt="photo" />
+                    <div class="info-group-photo__inner">
+                      <div class="info-group-photo__left">
+                        <div class="info-img-small">
+                          <img src="assets/img/img_1.jpg" alt="photo" />
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="info-group-photo__right">
-                      <img src="assets/img/img_2.jpg" alt="photo" />
-                    </div>
+                      <div class="info-group-photo__right">
+                        <img src="assets/img/img_2.jpg" alt="photo" />
+                      </div>
 
-                    <div class="info-group-photo__btn box-mob">
+                      <div class="info-group-photo__btn box-mob">
                       <a href="about.html" class="button-corner"><span>View all</span></a>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -230,7 +240,7 @@
       </div>
     </div>
 
-    <div class="section section-page" id="testBox__2">
+    <div class="section section-page">
       <div class="content">
         <span class="content__line"></span>
 
@@ -696,8 +706,8 @@
     </div>
   </footer>
 </div>
-<script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
-<script src="assets/libs/ripples/jquery.ripples.js"></script>
+
+<script src="assets/libs/wow/wow.min.js"></script>
 <script>
 
 </script>
