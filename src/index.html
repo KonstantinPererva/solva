@@ -8,670 +8,56 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body style="background: #101010;">
-<script>
-  document.body.style.opacity = '0';
+  <script>
+    document.body.style.opacity = '0';
+    document.body.style.transition = '300ms';
 
-  window.addEventListener('load', function () {
-      document.body.style.transition = '300ms';
-      document.body.style.opacity = '1';
-  })
-</script>
+    window.addEventListener('load', function () {
+        document.body.style.transition = '0';
+        document.body.style.opacity = '1';
+    })
+  </script>
 
-<div class="wrapper wrapper-theme-dark">
-  <div class="menu">
-    <div class="content">
-      <div class="menu-list">
-        <div class="menu-list__item">
-          <a href="/">Home</a>
-        </div>
-
-        <div class="menu-list__item">
-          <a href="about.html">About us</a>
-        </div>
-
-        <div class="menu-list__item">
-          <a href="works.html">Works</a>
-        </div>
-
-        <div class="menu-list__item">
-          <a href="services.html">Services</a>
-        </div>
-
-        <div class="menu-list__item">
-          <a href="contacts.html">Contact</a>
-        </div>
-      </div>
-
-      <div class="menu-block">
-        <div class="language-list">
-          <div class="language-list__item">
-            <a href="" class="active">En</a>
-          </div>
-
-          <div class="language-list__item">
-            <a href="">Ru</a>
-          </div>
-        </div>
-
-        <div class="s-net">
-          <div class="s-net-list">
-            <div class="s-net-list__item">
-              <a href="#" target="_blank" class="link-m-u">Facebook</a>
-            </div>
-
-            <div class="s-net-list__item">
-              <a href="#" target="_blank" class="link-m-u">Instagram</a>
-            </div>
-
-            <div class="s-net-list__item">
-              <a href="#" target="_blank" class="link-m-u">Telegram</a>
-            </div>
-
-            <div class="s-net-list__item">
-              <a href="#" target="_blank" class="link-m-u">Linkeding</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <header class="header in-section-main">
-    <div class="content">
-      <div class="header-hold">
-        <div class="header-hold__logo">
-          <div class="logo">
-            <svg width="99" height="51" viewBox="0 0 99 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3831 48.7409C22.1968 47.4475 21.5624 45.3909 21.4785 42.5685L26.2918 41.8422C26.3128 43.4632 26.5068 44.6264 26.8751 45.3317C27.2408 46.0369 27.7914 46.3896 28.5254 46.3896C29.4692 46.3896 29.9411 45.7698 29.9411 44.5264C29.9411 43.5369 29.717 42.6843 29.266 41.9685C28.8138 41.2527 28.106 40.4843 27.1425 39.6632L24.9391 37.7369C23.8485 36.8106 23.0043 35.8264 22.4066 34.7843C21.8088 33.7422 21.5113 32.5067 21.5113 31.0738C21.5113 28.9264 22.1444 27.2738 23.4133 26.1159C24.6821 24.958 26.4281 24.379 28.6513 24.379C31.0632 24.379 32.7043 25.0843 33.5747 26.4948C34.4451 27.9067 34.9117 29.6211 34.9746 31.6422L30.1299 32.2422C30.0879 30.9159 29.9673 29.9632 29.7694 29.3843C29.5688 28.8053 29.1337 28.5159 28.4625 28.5159C27.9801 28.5159 27.6079 28.7211 27.3457 29.1317C27.0835 29.5422 26.9525 30.0001 26.9525 30.5053C26.9525 31.3685 27.1465 32.0948 27.5358 32.6843C27.9225 33.2738 28.5464 33.9475 29.4063 34.704L31.5154 36.5672C32.7738 37.6422 33.749 38.779 34.4398 39.979C35.1319 41.179 35.478 42.5988 35.478 44.2409C35.478 45.4422 35.2001 46.5317 34.6443 47.5106C34.0898 48.4896 33.3086 49.2632 32.3006 49.8317C31.2952 50.4001 30.1299 50.6843 28.8086 50.6843C26.3757 50.6843 24.5668 50.0369 23.3831 48.7409" fill="#FFFFFE"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M47.2122 45.8685C47.4639 45.3317 47.5898 44.6001 47.5898 43.6738V31.3567C47.5898 30.4106 47.4639 29.6738 47.2122 29.1474C46.9606 28.6211 46.4349 28.358 45.6393 28.358C44.8842 28.358 44.3809 28.6264 44.1292 29.1632C43.8775 29.7001 43.7517 30.4317 43.7517 31.3567V43.6738C43.7517 44.6001 43.8657 45.3317 44.0978 45.8685C44.3285 46.4053 44.8423 46.6738 45.6393 46.6738C46.4349 46.6738 46.9606 46.4053 47.2122 45.8685ZM39.7564 48.5527C38.5806 47.1317 37.9946 45.0317 37.9946 42.2527V32.7475C37.9946 29.9685 38.5806 27.879 39.7564 26.479C40.9308 25.079 42.8905 24.379 45.6393 24.379C48.4077 24.379 50.3844 25.0843 51.5694 26.4948C52.7544 27.9067 53.3468 29.9896 53.3468 32.7475V42.2527C53.3468 45.0317 52.7544 47.1317 51.5694 48.5527C50.3844 49.9738 48.4077 50.6843 45.6393 50.6843C42.8905 50.6843 40.9308 49.9738 39.7564 48.5527V48.5527Z" fill="#FFFFFE"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M56.9019 25.0487H62.5331V46.8066H68.3859V50.6277H56.9019V25.0487" fill="#FFFFFE"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.832 25.0487H72.1286L76.9419 46.2382L81.472 25.0487H83.7371L77.98 50.6277H75.8106L69.832 25.0487" fill="#FFFFFE"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M94.8108 42.0382L92.104 28.2382L89.3998 42.0382H94.8108ZM90.8154 25.0487H93.3322L98.7432 50.6277H96.3838L95.1254 43.775H89.0537L87.7639 50.6277H85.4346L90.8154 25.0487V25.0487Z" fill="#FFFFFE"/>
-              <path d="M59.6757 21.4119V2.44348H2V47.9685H17.7297" stroke="#FFFFFE" stroke-width="4"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="header-hold__button">
-          <button class="button-toggle">
-            <svg width="32" height="12" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0L30 0" stroke="#E9EBED" stroke-width="2" stroke-linecap="square"/>
-              <path d="M10 8L30 8" stroke="#E9EBED" stroke-width="2" stroke-linecap="square"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-    <div class="section section_full-page section-main">
-      <div class="section__video">
-        <video class="banner-video" id="video-1" autoplay="" loop="" muted="" playsinline="playsinline" poster="assets/img/preview.png">
-          <source src="assets/video/test.mp4" type="video/mp4" />
-          <source src="assets/video/test.webm" type="video/webm" />
-        </video>
-      </div>
-
-      <div class="video-cutout">
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-        <div class="video-cutout__tile hidden md-block"></div>
-      </div>
-
+  <div class="wrapper wrapper-theme-dark">
+    <div class="menu">
       <div class="content">
-        <div class="section-title">
-          <span>your fully charged digital agency</span>
-        </div>
-
-        <div class="section-block">
-          <div class="slogan">
-            <div class="slogan__title">
-              <span>Our mission</span>
-            </div>
-
-            <div class="slogan__text">
-              <span>Making project valuable beyond the time</span>
-            </div>
+        <div class="menu-list">
+          <div class="menu-list__item">
+            <a href="/">Home</a>
           </div>
 
-          <div class="section-block__button">
-            <a href="form.html" class="button-hidden-text start-project">
-              <span class="button-hidden-text__text">start a project</span>
+          <div class="menu-list__item">
+            <a href="about.html">About us</a>
+          </div>
 
-              <span class="button-hidden-text__ico">
-                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="25" cy="25" r="25" fill="white"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M31.8921 21.7354L32.5211 21.1065C33.1501 20.471 33.1501 19.4476 32.5211 18.8119L31.1847 17.4755C30.5511 16.8415 29.5237 16.8415 28.8901 17.4755L28.2611 18.1044L31.8921 21.7354ZM22.6352 30.9875L19.009 27.3613L27.7796 18.5908L31.4058 22.217L22.6352 30.9875ZM18.6701 28.0001L21.9965 31.3265L17.0093 32.9873L18.6701 28.0001Z" fill="black"/>
-                </svg>
-              </span>
-            </a>
+          <div class="menu-list__item">
+            <a href="works.html">Works</a>
+          </div>
+
+          <div class="menu-list__item">
+            <a href="services.html">Services</a>
+          </div>
+
+          <div class="menu-list__item">
+            <a href="contacts.html">Contact</a>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="section section-page">
-      <div class="content">
-        <span class="content__line"></span>
+        <div class="menu-block">
+          <div class="language-list">
+            <div class="language-list__item">
+              <a href="" class="active">En</a>
+            </div>
 
-        <div class="section-hold">
-          <div class="section-hold__left">
-            <div class="section-title">
-              <span>About us</span>
+            <div class="language-list__item">
+              <a href="">Ru</a>
             </div>
           </div>
 
-          <div class="section-hold__right">
-            <div class="info">
-              <div class="info__descr">
-                <div class="info-box-text">
-                  <p>We always help companies to become better,
-                    come to modern and working business
-                    solutions, taking into account all the features
-                    of this brand.</p>
-                </div>
-              </div>
-
-              <span class="info-line box-desktop"></span>
-
-              <div class="info-box-double">
-                <div class="info-box-double__left">
-                  <div class="info-box-text">
-                    <p>We work with any tasks: creative, marketing, pr-companies, web development, strategies, design, production.</p>
-                  </div>
-
-                  <div class="box-desktop">
-                    <a href="about.html" class="button-corner"><span>View all</span></a>
-                  </div>
-                </div>
-
-                <div class="info-box-double__right">
-                  <div class="info-group-photo">
-                    <div class="info-group-photo__inner">
-                      <div class="info-group-photo__left">
-                        <div class="info-img-small">
-                          <img src="assets/img/img_1.jpg" alt="photo" />
-                        </div>
-                      </div>
-
-                      <div class="info-group-photo__right">
-                        <img src="assets/img/img_2.jpg" alt="photo" />
-                      </div>
-
-                      <div class="info-group-photo__btn box-mob">
-                      <a href="about.html" class="button-corner"><span>View all</span></a>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section section-page">
-      <div class="content">
-        <span class="content__line"></span>
-
-        <div class="section-hold">
-          <div class="section-hold__left">
-            <div class="section-title">
-              <span>Clients</span>
-            </div>
-          </div>
-
-          <div class="section-hold__right">
-            <div class="content-list content-list_inline">
-              <div class="content-list__item">
-                <div class="content-title">
-                  <span>Mercedes-Benz</span>
-                </div>
-
-                <div class="content-subtitle">
-                  <span>seo</span>
-                </div>
-              </div>
-
-              <div class="content-list__item">
-                <div class="content-title">
-                  <span>OneLife</span>
-                </div>
-
-                <div class="content-subtitle">
-                  <span>seo</span>
-                </div>
-              </div>
-
-              <div class="content-list__item">
-                <div class="content-title">
-                  <span>Helen Marlen</span>
-                </div>
-
-                <div class="content-subtitle">
-                  <span>pr</span>
-                </div>
-              </div>
-
-              <div class="content-list__item">
-                <div class="content-title">
-                  <span>Davis cup</span>
-                </div>
-
-                <div class="content-subtitle">
-                  <span>pr</span>
-                </div>
-              </div>
-
-              <div class="content-list__item">
-                <div class="content-title">
-                  <span>nikon</span>
-                </div>
-
-                <div class="content-subtitle">
-                  <span>seo</span>
-                </div>
-              </div>
-
-              <div class="content-list__item">
-                <div class="content-title">
-                  <span>L’Officiel</span>
-                </div>
-
-                <div class="content-subtitle">
-                  <span>seo</span>
-                </div>
-              </div>
-
-              <div class="content-list__item">
-                <div class="content-title">
-                  <span>Vogue Ukraine</span>
-                </div>
-
-                <div class="content-subtitle">
-                  <span>seo</span>
-                </div>
-              </div>
-
-              <div class="content-list__item">
-                <div class="content-title">
-                  <span>intel</span>
-                </div>
-
-                <div class="content-subtitle">
-                  <span>seo</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section section-page">
-      <div class="content">
-        <span class="content__line"></span>
-
-        <div class="section-hold">
-          <div class="section-hold__left">
-            <div class="section-title">
-              <span>Services</span>
-            </div>
-          </div>
-
-          <div class="section-hold__right">
-            <div class="info">
-              <div class="info__descr">
-                <div class="info-box-text">
-                  <p>We work with any tasks: creative, marketing,
-                    pr-companies, branding, web development,
-                    strategies, design, production.
-                    We know what your audience likes and needs.</p>
-                </div>
-              </div>
-
-              <span class="info-line"></span>
-
-              <div class="info-box-double">
-                <div class="info-box-double__left">
-                  <div class="info-box-title info-box-title_move-left">
-                    <div class="info-box-title__inner">
-                      <span data-text-move="left">Marketing/Targeted Marketing</span>
-                      <span data-text-move="left">Marketing/Targeted Marketing</span>
-                      <span data-text-move="left">Marketing/Targeted Marketing</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="info-box-double__right">
-                  <div class="info-box-text">
-                    <p>We know exactly what your audience needs.
-                      We combine technology with different concepts to create experiences that affect your audience at an emotional level.</p>
-                  </div>
-
-                  <div class="wr-button">
-                    <a href="services.html" class="button-corner"><span>View all</span></a>
-                  </div>
-                </div>
-
-                <span class="info-line box-mob"></span>
-              </div>
-
-              <div class="info-box-double">
-                <div class="info-box-double__left">
-                  <div class="info-box-title info-box-title_move-left">
-                    <div class="info-box-title__inner">
-                      <span data-text-move="left">pr/pr company</span>
-                      <span data-text-move="left">pr/pr company</span>
-                      <span data-text-move="left">pr/pr company</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="info-box-double__right">
-                  <div class="info-box-text">
-                    <p>Our experts combine creativity with great stories to make your project even more visible.
-                      We know what your audience likes and needs for
-                      your business.</p>
-                  </div>
-
-                  <div class="wr-button">
-                    <a href="services.html" class="button-corner"><span>View all</span></a>
-                  </div>
-                </div>
-
-                <span class="info-line box-mob"></span>
-              </div>
-
-              <div class="info-box-double">
-                <div class="info-box-double__left">
-                  <div class="info-box-title info-box-title_move-left">
-                    <div class="info-box-title__inner">
-                      <span data-text-move="left">branding/branding analysis</span>
-                      <span data-text-move="left">branding/branding analysis</span>
-                      <span data-text-move="left">branding/branding analysis</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="info-box-double__right">
-                  <div class="info-box-text">
-                    <p>We give your brand a face that will be attractive
-                      and outstanding for many more years.
-                      We know what your audience likes
-                      and needs.</p>
-                  </div>
-
-                  <div class="wr-button">
-                    <a href="services.html" class="button-corner"><span>View all</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section section-page">
-      <div class="content">
-        <span class="content__line"></span>
-
-        <div class="section-hold">
-          <div class="section-hold__left">
-            <div class="section-title">
-              <span>Works</span>
-            </div>
-          </div>
-
-          <div class="section-hold__right section-hold__right_move-box">
-            <div class="box-text-move" data-node-text-move="works">
-              <div class="box-text-move__item">
-                <div class="content-list" data-text-move="left">
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Mercedes-Benz Spring edition</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar.20 2020</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Helen Marlen Spring inspiration</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar.20 2020</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Intel Spring edition</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar.20 2020</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Davis cup Spring edition</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar.20 2020</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="content-list" data-text-move="left">
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Mercedes-Benz Spring edition</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar.20 2020</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Helen Marlen Spring inspiration</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar.20 2020</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Intel Spring edition</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar.20 2020</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Davis cup Spring edition</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar.20 2020</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="box-text-move__item box-text-move__item_right">
-                <div class="content-list" data-text-move="right">
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Nikon beauty in the frame</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>apr. 2020</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>L’Officiel Clever gloss</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>may.2018</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>OneLife Turn on your life</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar. 2019</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Vogue Ukraine spring edition</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>apr. 2020</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="content-list" data-text-move="right">
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Nikon beauty in the frame</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>apr. 2020</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>L’Officiel Clever gloss</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>may.2018</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>OneLife Turn on your life</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>mar. 2019</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="content-list__item">
-                    <a href="#" class="">
-                      <div class="content-title">
-                        <span>Vogue Ukraine spring edition</span>
-                      </div>
-
-                      <div class="content-subtitle">
-                        <span>apr. 2020</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="content">
-      <div class="footer-hold">
-        <div class="footer-hold__left">
           <div class="s-net">
-            <div class="s-net-list s-net-list_line">
+            <div class="s-net-list">
               <div class="s-net-list__item">
                 <a href="#" target="_blank" class="link-m-u">Facebook</a>
               </div>
@@ -690,26 +76,639 @@
             </div>
           </div>
         </div>
-
-        <div class="footer-hold__right">
-          <div class="footer-title">
-            <span>Start a project?</span>
-          </div>
-
-          <address class="address">
-            <div class="address__row">
-              <a href="mailto:solva@gmail.com" class="link-m-u">solva@gmail.com</a>
-            </div>
-          </address>
-        </div>
       </div>
     </div>
-  </footer>
-</div>
 
-<script src="assets/libs/wow/wow.min.js"></script>
-<script>
+    <header class="header in-section-main">
+      <div class="content">
+        <div class="header-hold">
+          <div class="header-hold__logo">
+            <div class="logo">
+              <svg width="99" height="51" viewBox="0 0 99 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3831 48.7409C22.1968 47.4475 21.5624 45.3909 21.4785 42.5685L26.2918 41.8422C26.3128 43.4632 26.5068 44.6264 26.8751 45.3317C27.2408 46.0369 27.7914 46.3896 28.5254 46.3896C29.4692 46.3896 29.9411 45.7698 29.9411 44.5264C29.9411 43.5369 29.717 42.6843 29.266 41.9685C28.8138 41.2527 28.106 40.4843 27.1425 39.6632L24.9391 37.7369C23.8485 36.8106 23.0043 35.8264 22.4066 34.7843C21.8088 33.7422 21.5113 32.5067 21.5113 31.0738C21.5113 28.9264 22.1444 27.2738 23.4133 26.1159C24.6821 24.958 26.4281 24.379 28.6513 24.379C31.0632 24.379 32.7043 25.0843 33.5747 26.4948C34.4451 27.9067 34.9117 29.6211 34.9746 31.6422L30.1299 32.2422C30.0879 30.9159 29.9673 29.9632 29.7694 29.3843C29.5688 28.8053 29.1337 28.5159 28.4625 28.5159C27.9801 28.5159 27.6079 28.7211 27.3457 29.1317C27.0835 29.5422 26.9525 30.0001 26.9525 30.5053C26.9525 31.3685 27.1465 32.0948 27.5358 32.6843C27.9225 33.2738 28.5464 33.9475 29.4063 34.704L31.5154 36.5672C32.7738 37.6422 33.749 38.779 34.4398 39.979C35.1319 41.179 35.478 42.5988 35.478 44.2409C35.478 45.4422 35.2001 46.5317 34.6443 47.5106C34.0898 48.4896 33.3086 49.2632 32.3006 49.8317C31.2952 50.4001 30.1299 50.6843 28.8086 50.6843C26.3757 50.6843 24.5668 50.0369 23.3831 48.7409" fill="#FFFFFE"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M47.2122 45.8685C47.4639 45.3317 47.5898 44.6001 47.5898 43.6738V31.3567C47.5898 30.4106 47.4639 29.6738 47.2122 29.1474C46.9606 28.6211 46.4349 28.358 45.6393 28.358C44.8842 28.358 44.3809 28.6264 44.1292 29.1632C43.8775 29.7001 43.7517 30.4317 43.7517 31.3567V43.6738C43.7517 44.6001 43.8657 45.3317 44.0978 45.8685C44.3285 46.4053 44.8423 46.6738 45.6393 46.6738C46.4349 46.6738 46.9606 46.4053 47.2122 45.8685ZM39.7564 48.5527C38.5806 47.1317 37.9946 45.0317 37.9946 42.2527V32.7475C37.9946 29.9685 38.5806 27.879 39.7564 26.479C40.9308 25.079 42.8905 24.379 45.6393 24.379C48.4077 24.379 50.3844 25.0843 51.5694 26.4948C52.7544 27.9067 53.3468 29.9896 53.3468 32.7475V42.2527C53.3468 45.0317 52.7544 47.1317 51.5694 48.5527C50.3844 49.9738 48.4077 50.6843 45.6393 50.6843C42.8905 50.6843 40.9308 49.9738 39.7564 48.5527V48.5527Z" fill="#FFFFFE"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.9019 25.0487H62.5331V46.8066H68.3859V50.6277H56.9019V25.0487" fill="#FFFFFE"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M69.832 25.0487H72.1286L76.9419 46.2382L81.472 25.0487H83.7371L77.98 50.6277H75.8106L69.832 25.0487" fill="#FFFFFE"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M94.8108 42.0382L92.104 28.2382L89.3998 42.0382H94.8108ZM90.8154 25.0487H93.3322L98.7432 50.6277H96.3838L95.1254 43.775H89.0537L87.7639 50.6277H85.4346L90.8154 25.0487V25.0487Z" fill="#FFFFFE"/>
+                <path d="M59.6757 21.4119V2.44348H2V47.9685H17.7297" stroke="#FFFFFE" stroke-width="4"/>
+              </svg>
+            </div>
+          </div>
 
-</script>
+          <div class="header-hold__button">
+            <button class="button-toggle">
+              <svg width="32" height="12" viewBox="0 0 31 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L30 0" stroke="#E9EBED" stroke-width="2" stroke-linecap="square"/>
+                <path d="M10 8L30 8" stroke="#E9EBED" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="section section_full-page section-main">
+        <div class="section__video">
+          <video class="banner-video" id="video-1" autoplay="" loop="" muted="" playsinline="playsinline" poster="assets/img/preview.png">
+            <source src="assets/video/test.mp4" type="video/mp4" />
+            <source src="assets/video/test.webm" type="video/webm" />
+          </video>
+        </div>
+
+        <div class="video-cutout">
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+          <div class="video-cutout__tile hidden md-block"></div>
+        </div>
+
+        <div class="content">
+          <div class="section-title">
+            <span>your fully charged digital agency</span>
+          </div>
+
+          <div class="section-block">
+            <div class="slogan">
+              <div class="slogan__title">
+                <span>Our mission</span>
+              </div>
+
+              <div class="slogan__text">
+                <span>Making project valuable beyond the time</span>
+              </div>
+            </div>
+
+            <div class="section-block__button">
+              <a href="form.html" class="button-hidden-text start-project">
+                <span class="button-hidden-text__text">start a project</span>
+
+                <span class="button-hidden-text__ico">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.8921 21.7354L32.5211 21.1065C33.1501 20.471 33.1501 19.4476 32.5211 18.8119L31.1847 17.4755C30.5511 16.8415 29.5237 16.8415 28.8901 17.4755L28.2611 18.1044L31.8921 21.7354ZM22.6352 30.9875L19.009 27.3613L27.7796 18.5908L31.4058 22.217L22.6352 30.9875ZM18.6701 28.0001L21.9965 31.3265L17.0093 32.9873L18.6701 28.0001Z" fill="black"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-page">
+        <div class="content">
+          <span class="content__line"></span>
+
+          <div class="section-hold">
+            <div class="section-hold__left">
+              <div class="section-title">
+                <span>About us</span>
+              </div>
+            </div>
+
+            <div class="section-hold__right">
+              <div class="info">
+                <div class="info__descr">
+                  <div class="info-box-text">
+                    <p>We always help companies to become better,
+                      come to modern and working business
+                      solutions, taking into account all the features
+                      of this brand.</p>
+                  </div>
+                </div>
+
+                <span class="info-line box-desktop"></span>
+
+                <div class="info-box-double">
+                  <div class="info-box-double__left">
+                    <div class="info-box-text">
+                      <p>We work with any tasks: creative, marketing, pr-companies, web development, strategies, design, production.</p>
+                    </div>
+
+                    <div class="box-desktop">
+                      <a href="about.html" class="button-corner"><span>View all</span></a>
+                    </div>
+                  </div>
+
+                  <div class="info-box-double__right">
+                    <div class="info-group-photo">
+                      <div class="info-group-photo__inner">
+                        <div class="info-group-photo__left">
+                          <div class="info-img-small">
+                            <img src="assets/img/img_1.jpg" alt="photo" />
+                          </div>
+                        </div>
+
+                        <div class="info-group-photo__right">
+                          <img src="assets/img/img_2.jpg" alt="photo" />
+                        </div>
+
+                        <div class="info-group-photo__btn box-mob">
+                        <a href="about.html" class="button-corner"><span>View all</span></a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-page">
+        <div class="content">
+          <span class="content__line"></span>
+
+          <div class="section-hold">
+            <div class="section-hold__left">
+              <div class="section-title">
+                <span>Clients</span>
+              </div>
+            </div>
+
+            <div class="section-hold__right">
+              <div class="content-list content-list_inline">
+                <div class="content-list__item">
+                  <div class="content-title">
+                    <span>Mercedes-Benz</span>
+                  </div>
+
+                  <div class="content-subtitle">
+                    <span>seo</span>
+                  </div>
+                </div>
+
+                <div class="content-list__item">
+                  <div class="content-title">
+                    <span>OneLife</span>
+                  </div>
+
+                  <div class="content-subtitle">
+                    <span>seo</span>
+                  </div>
+                </div>
+
+                <div class="content-list__item">
+                  <div class="content-title">
+                    <span>Helen Marlen</span>
+                  </div>
+
+                  <div class="content-subtitle">
+                    <span>pr</span>
+                  </div>
+                </div>
+
+                <div class="content-list__item">
+                  <div class="content-title">
+                    <span>Davis cup</span>
+                  </div>
+
+                  <div class="content-subtitle">
+                    <span>pr</span>
+                  </div>
+                </div>
+
+                <div class="content-list__item">
+                  <div class="content-title">
+                    <span>nikon</span>
+                  </div>
+
+                  <div class="content-subtitle">
+                    <span>seo</span>
+                  </div>
+                </div>
+
+                <div class="content-list__item">
+                  <div class="content-title">
+                    <span>L’Officiel</span>
+                  </div>
+
+                  <div class="content-subtitle">
+                    <span>seo</span>
+                  </div>
+                </div>
+
+                <div class="content-list__item">
+                  <div class="content-title">
+                    <span>Vogue Ukraine</span>
+                  </div>
+
+                  <div class="content-subtitle">
+                    <span>seo</span>
+                  </div>
+                </div>
+
+                <div class="content-list__item">
+                  <div class="content-title">
+                    <span>intel</span>
+                  </div>
+
+                  <div class="content-subtitle">
+                    <span>seo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-page">
+        <div class="content">
+          <span class="content__line"></span>
+
+          <div class="section-hold">
+            <div class="section-hold__left">
+              <div class="section-title">
+                <span>Services</span>
+              </div>
+            </div>
+
+            <div class="section-hold__right">
+              <div class="info">
+                <div class="info__descr">
+                  <div class="info-box-text">
+                    <p>We work with any tasks: creative, marketing,
+                      pr-companies, branding, web development,
+                      strategies, design, production.
+                      We know what your audience likes and needs.</p>
+                  </div>
+                </div>
+
+                <span class="info-line"></span>
+
+                <div class="info-box-double">
+                  <div class="info-box-double__left">
+                    <div class="info-box-title info-box-title_move-left">
+                      <div class="info-box-title__inner">
+                        <span data-text-move="left">Marketing/Targeted Marketing</span>
+                        <span data-text-move="left">Marketing/Targeted Marketing</span>
+                        <span data-text-move="left">Marketing/Targeted Marketing</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-box-double__right">
+                    <div class="info-box-text">
+                      <p>We know exactly what your audience needs.
+                        We combine technology with different concepts to create experiences that affect your audience at an emotional level.</p>
+                    </div>
+
+                    <div class="wr-button">
+                      <a href="services.html" class="button-corner"><span>View all</span></a>
+                    </div>
+                  </div>
+
+                  <span class="info-line box-mob"></span>
+                </div>
+
+                <div class="info-box-double">
+                  <div class="info-box-double__left">
+                    <div class="info-box-title info-box-title_move-left">
+                      <div class="info-box-title__inner">
+                        <span data-text-move="left">pr/pr company</span>
+                        <span data-text-move="left">pr/pr company</span>
+                        <span data-text-move="left">pr/pr company</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-box-double__right">
+                    <div class="info-box-text">
+                      <p>Our experts combine creativity with great stories to make your project even more visible.
+                        We know what your audience likes and needs for
+                        your business.</p>
+                    </div>
+
+                    <div class="wr-button">
+                      <a href="services.html" class="button-corner"><span>View all</span></a>
+                    </div>
+                  </div>
+
+                  <span class="info-line box-mob"></span>
+                </div>
+
+                <div class="info-box-double">
+                  <div class="info-box-double__left">
+                    <div class="info-box-title info-box-title_move-left">
+                      <div class="info-box-title__inner">
+                        <span data-text-move="left">branding/branding analysis</span>
+                        <span data-text-move="left">branding/branding analysis</span>
+                        <span data-text-move="left">branding/branding analysis</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-box-double__right">
+                    <div class="info-box-text">
+                      <p>We give your brand a face that will be attractive
+                        and outstanding for many more years.
+                        We know what your audience likes
+                        and needs.</p>
+                    </div>
+
+                    <div class="wr-button">
+                      <a href="services.html" class="button-corner"><span>View all</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-page">
+        <div class="content">
+          <span class="content__line"></span>
+
+          <div class="section-hold">
+            <div class="section-hold__left">
+              <div class="section-title">
+                <span>Works</span>
+              </div>
+            </div>
+
+            <div class="section-hold__right section-hold__right_move-box">
+              <div class="box-text-move" data-node-text-move="works">
+                <div class="box-text-move__item">
+                  <div class="content-list" data-text-move="left">
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Mercedes-Benz Spring edition</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar.20 2020</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Helen Marlen Spring inspiration</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar.20 2020</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Intel Spring edition</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar.20 2020</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Davis cup Spring edition</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar.20 2020</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="content-list" data-text-move="left">
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Mercedes-Benz Spring edition</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar.20 2020</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Helen Marlen Spring inspiration</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar.20 2020</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Intel Spring edition</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar.20 2020</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Davis cup Spring edition</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar.20 2020</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-text-move__item box-text-move__item_right">
+                  <div class="content-list" data-text-move="right">
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Nikon beauty in the frame</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>apr. 2020</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>L’Officiel Clever gloss</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>may.2018</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>OneLife Turn on your life</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar. 2019</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Vogue Ukraine spring edition</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>apr. 2020</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="content-list" data-text-move="right">
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Nikon beauty in the frame</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>apr. 2020</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>L’Officiel Clever gloss</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>may.2018</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>OneLife Turn on your life</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>mar. 2019</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="content-list__item">
+                      <a href="#" class="">
+                        <div class="content-title">
+                          <span>Vogue Ukraine spring edition</span>
+                        </div>
+
+                        <div class="content-subtitle">
+                          <span>apr. 2020</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="content">
+        <div class="footer-hold">
+          <div class="footer-hold__left">
+            <div class="s-net">
+              <div class="s-net-list s-net-list_line">
+                <div class="s-net-list__item">
+                  <a href="#" target="_blank" class="link-m-u">Facebook</a>
+                </div>
+
+                <div class="s-net-list__item">
+                  <a href="#" target="_blank" class="link-m-u">Instagram</a>
+                </div>
+
+                <div class="s-net-list__item">
+                  <a href="#" target="_blank" class="link-m-u">Telegram</a>
+                </div>
+
+                <div class="s-net-list__item">
+                  <a href="#" target="_blank" class="link-m-u">Linkeding</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-hold__right">
+            <div class="footer-title">
+              <span>Start a project?</span>
+            </div>
+
+            <address class="address">
+              <div class="address__row">
+                <a href="mailto:solva@gmail.com" class="link-m-u">solva@gmail.com</a>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/libs/wow/wow.min.js"></script>
 </body>
 </html>
