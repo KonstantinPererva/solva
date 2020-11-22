@@ -100,6 +100,8 @@ window.addEventListener('load', function ()
             initMoveElement('.info-box-title_move-left', {velocity: .5});
             initMoveElement('[data-node-text-move="works"]', {velocity: .5});
             initMoveElement('[data-node-text-move="box-text-move-descr"]', {velocity: 1.2});
+
+            initMoveElement('.slogan__text', {velocity: .5});
         }
 
         initMoveText();

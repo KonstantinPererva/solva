@@ -16,6 +16,8 @@
   }
 
   &__text {
+    display: flex;
+    align-items: center;
     font-family: $ff-o;
     font-style: normal;
     font-weight: bold;
@@ -24,7 +26,10 @@
     letter-spacing: 0.75px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0 0 4px;
+    margin: 0 0 50px;
+    max-width: 470px;
+    width: 100%;
+    overflow: hidden;
 
     @media ($m-desktop) {
       font-size: 20px;
@@ -37,5 +42,18 @@
     @media ($m-mobile) {
       font-size: 18px;
     }
+
+    & span {
+      display: block;
+      padding-right: 50px;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
   }
+}
+
+.start-project {
+  position: fixed;
+  bottom: 30px;
+  z-index: 3000;
 }
