@@ -54,7 +54,13 @@
 
 .start-project {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   z-index: 2800;
-  right: calc(365 * 100vw / 1920);
+  //right: calc(365 * 100vw / 1920);
+}
+
+.wr-btn-h {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }

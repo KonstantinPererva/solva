@@ -27,16 +27,16 @@
     }
   }
 
-  .wrapper-theme-dark &, .in-open-popup &, .in-section-main &, .header-fixed & {
-    & svg {
-      & path {
-        fill: #fff;
-
-        &:last-child {
-          fill: none;
-          stroke: #fff;
-        }
-      }
-    }
-  }
+  //.wrapper-theme-dark &, .in-open-popup &, .in-section-main &, .header-fixed & {
+  //  & svg {
+  //    & path {
+  //      fill: #fff;
+  //
+  //      &:last-child {
+  //        fill: none;
+  //        stroke: #fff;
+  //      }
+  //    }
+  //  }
+  //}
 }

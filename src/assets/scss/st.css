@@ -1,0 +1,1260 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Regular.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-HeavyItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-RegularItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Light.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Demi-BoldItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Demi-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-MediumItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Extra-LightItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Extra-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-BoldItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Medium.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-LightItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-ExtraLight.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Bold.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-DemiBold.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Heavy.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/oswald/Oswald-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-Black.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplaySC-Italic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplaySC-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplaySC-BoldItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplaySC-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplaySC-BlackItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplaySC-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplaySC-Black.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplaySC-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+    url('/wp-content/themes/soledad-child/fonts/playfair/PlayfairDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+.penci-top-bar{
+    display:none;
+}
+
+.penci-menuhbg-wapper.penci-menu-toggle-wapper{
+    display:none;
+}
+
+.penci-go-to-top-floating.show-up{
+    display:none;
+}
+
+#navigation{
+    background:#00132F;
+}
+
+#navigation.header-6.menu-item-padding{
+    height:100px;
+    border-bottom:none;
+}
+
+#navigation.menu-item-padding ul.menu > li > a {
+    background-color: #00132F;
+    color:#fff;
+    font-weight: 400;
+}
+
+#navigation.menu-item-padding .menu > li.current-menu-item > a {
+    background-color: #00132F;
+    color:#be9e71;
+    border-top: 3px solid #be9e71;
+    font-weight: 500 !important;
+
+}
+
+body:not(.penci-fawesome-ver5) .penci-faicon{
+    color: white;
+}
+
+#navigation.menu-item-padding .menu > li > a:hover {
+    background-color: #00132F;
+}
+
+#footer-section{
+    display:none;
+}
+
+#widget-area {
+    height: 150px;
+    background-color: #00132F;
+}
+
+.penci-mag-featured-content {
+    display:none;
+}
+
+.owl-prev{
+    left:-50px !important;
+    opacity: 100 !important;
+    width: 40px;
+    height: 40px;
+}
+
+.owl-next{
+    right:-50px !important;
+    opacity: 100 !important;
+    width: 40px;
+    height: 40px;
+}
+
+.penci-homepage-title.style-4 .inner-arrow:before{
+    border-color: #E1E5EF;
+}
+
+.penci-homepage-title.style-4 .inner-arrow:after{
+    border-color: #E1E5EF;
+}
+#header {
+    height: 100px;
+}
+#header nav {
+    height: 100px!important;
+}
+#header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+#navigation.header-6 .menu{
+    height: 100%;
+}
+
+#navigation.header-6 #logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+.button-menu-header {
+    background-color: #be9e71;
+    border-radius: 22.5px;
+    padding: 5px 25px;
+    margin-right: -50px;
+}
+
+.button-menu-header a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    line-height: 34px;
+}
+.penci-faicon:before {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #e1e4ee;
+}
+.menu-main-menu-1 li a{
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#navigation.menu-item-padding .menu > li:not(.current-menu-item) > a {
+    border-top: 3px solid transparent;
+}
+
+#navigation.menu-item-padding .menu > li > a {
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    height: 100%;
+
+}
+#navigation.menu-item-padding ul.menu > li > a, #navigation.menu-item-padding .menu > ul > li > a {
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    letter-spacing: 0;
+
+}
+
+#navigation.menu-item-padding .menu > li.current-menu-item > a {
+    font-weight: 500 !important;
+}
+#navigation.menu-item-padding ul.menu > li, #navigation.menu-item-padding .menu > ul > li {
+    margin: 0 25px;
+    height: 100%;
+}
+#navigation.header-10.menu-item-padding, #navigation.header-11.menu-item-padding, #navigation.header-6.menu-item-padding, #navigation.header-9.menu-item-padding, #navigation.header-10.menu-item-padding ul.menu > li > a, #navigation.header-11.menu-item-padding ul.menu > li > a, #navigation.header-6.menu-item-padding ul.menu > li > a, #navigation.header-9.menu-item-padding ul.menu > li > a {
+    height: auto;
+}
+#navigation.header-6 .menu > li > a, #navigation.header-6 ul.menu > li > a {
+    line-height: 97px;
+}
+#widget-area {
+    padding: 0;
+}
+#widget-area .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-widget-wrapper {
+    width: auto;
+    float: none;
+}
+#widget-area > .container:before, #widget-area > .container:after {
+    display: none;
+}
+
+.author-block {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px 0px #e1e4ee;
+    border-radius: 10px;
+    padding: 15px 30px 0 30px;
+    max-width: 340px;
+    position: relative;
+    margin: 0 auto 70px auto;
+}
+.author-title {
+    font-family: Oswald;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #223241;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.author-title::before,
+.author-title::after {
+    content: "";
+    position: absolute;
+    background-color: #e1e4ee;
+    height: 1px;
+    top: 50%;
+    width: 111px;
+}
+.author-title::before {
+    left: 0;
+}
+.author-title::after {
+    right: 0;
+}
+.title {
+}
+.author-image {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.author-name {
+    text-align: center;
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #0d2c54;
+    margin-bottom: 5px;
+}
+.author-subtitle {
+    text-align: center;
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #86a9d6;
+    margin-bottom: 15px;
+}
+.author-text {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #babecd;
+    text-align: center;
+    padding-bottom: 55px;
+}
+.author-button {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0d2c54;
+    border-radius: 22.5px;
+    padding: 5px 45px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    left: 50%;
+}
+
+.author-button a {
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff!important;
+}
+.subs {
+    background-color: #f2f3f8;
+    padding: 30px 40px;
+}
+.subs-title {
+    text-align: center;
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #0d2c54;
+    margin-bottom: 25px;
+}
+
+.subs-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#respond p.comment-form-author, #respond p.comment-form-email, #respond p.comment-form-url, .wpcf7 p.name, .wpcf7 p.email, .wpcf7 p.subject {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 22.5px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.subs-form input {
+    width: 100%;
+    margin: 0!important;
+    font-family: Oswald!important;
+    font-size: 15px!important;
+    line-height: 24px!important;
+    font-weight: 400;
+    color: #9ca7b6;
+    border: none!important;
+    outline: none;
+    padding: 15px 10px!important;
+}
+.penci-button, .widget input[type="submit"] {
+    background-color: #be9e71!important;
+    border-radius: 22.5px;
+}
+.submit {
+    background-color: #be9e71!important;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center!important;
+    padding: 13px 80px;
+}
+.submit input {
+    font-family: Oswald;
+    font-size: 14px!important;
+    line-height: 34px;
+    font-weight: 500!important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff!important;
+    text-align: center;
+    padding: 0!important;
+    width: 100%!important;
+}
+.wpcf7 .ajax-loader::before {
+    display: none;
+}
+.wpcf7 .ajax-loader {
+    display: none;
+}
+
+.email {
+    margin-bottom: 20px!important;
+}
+
+.penci-sidebar-content .penci-border-arrow .inner-arrow {
+    font-family: Oswald;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0d2c54;
+    background: none;
+    border: none;
+}
+
+.penci-sidebar-content .penci-border-arrow .inner-arrow:after,
+.penci-sidebar-content .penci-border-arrow .inner-arrow:before {
+    content: "";
+    position: absolute;
+    background-color: #e1e4ee;
+    height: 1px;
+    top: 50%;
+    width: 97px;
+
+}
+.penci-sidebar-content .penci-border-arrow .inner-arrow:before {
+    left: 0;
+}
+.penci-sidebar-content .penci-border-arrow .inner-arrow:after { right: 0;}
+.penci-sidebar-content.style-2 .widget-title, .penci-sidebar-content.style-3 .widget-title, .penci-sidebar-content.style-4 .widget-title, .penci-sidebar-content.style-5 .widget-title, .penci-sidebar-content.style-6 .widget-title, .penci-sidebar-content.style-7 .widget-title, .penci-sidebar-content.style-8 .widget-title, .penci-sidebar-content.style-9 .widget-title, .penci-sidebar-content.style-10 .widget-title, .penci-sidebar-content.style-11 .widget-title, .penci-sidebar-content.style-12 .widget-title, .penci-sidebar-content.style-13 .widget-title, .penci-sidebar-content.style-14 .widget-title, .penci-homepage-title.style-2, .penci-homepage-title.style-3, .penci-homepage-title.style-4, .penci-homepage-title.style-5, .penci-homepage-title.style-6, .penci-homepage-title.style-7, .penci-homepage-title.style-8, .penci-homepage-title.style-9, .penci-homepage-title.style-10, .penci-homepage-title.style-11, .penci-homepage-title.style-12, .penci-homepage-title.style-13 {
+    text-align: center;
+}
+
+.widget ul.side-newsfeed li .side-item .side-item-text h4 a, .widget-social a i, .widget-social a span, .widget-social.show-text a span, .penci-video_playlist .penci-video-playlist-item .penci-video-title {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #0d2c54;
+}
+.widget-social.show-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.widget-social .penci-faicon:before {
+    font-size: 14px;
+    color: #86a9d6;
+}
+.widget-social.show-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subs-main {
+    display: flex;
+    align-items: center;
+    background-color: #f2f3f8;
+    padding:30px;
+    max-width: 800px;
+    width: 100%;
+    margin-right: 10px;
+}
+.subs-main-title {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #0d2c54;
+    margin-right: 30px;
+    white-space: nowrap;
+}
+#respond p.comment-form-author, #respond p.comment-form-email, #respond p.comment-form-url, .wpcf7 p.name, .wpcf7 p.email, .wpcf7 p.subject {
+    padding: 0;
+}
+.penci-login-register input[type="email"], .penci-login-register input[type="text"], .penci-login-register input[type="password"], .penci-login-register input[type="number"], #respond input, .wpcf7 input, .widget_wysija input {
+    margin: 0;
+}
+.email {
+    margin: 0!important;
+}
+#respond p.comment-form-author, #respond p.comment-form-email, #respond p.comment-form-url, .wpcf7 p.name, .wpcf7 p.email, .wpcf7 p.subject {
+    margin: 0;
+}
+.penci-login-register input[type="submit"], #respond #submit, .wpcf7 input[type="submit"], .widget_wysija input[type="submit"] {
+    background: none;
+}
+.subs-main .subs-main-form .submit {
+    font-family: Oswald;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+}
+.subs-main-form {
+    display: flex;
+    background: #fff;
+    border-radius: 22.5px;
+}
+.subs-main .subs-main-form input {
+    border: none;
+    padding-left: 20px;
+    font-family: Oswald;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #9ca7b6;
+}
+.subs-main .subs-main-form .name input {
+    border-right: 1px solid #e1e4ee;
+}
+.elementor-1395 .elementor-element.elementor-element-4056335 > .elementor-widget-container {
+    background-color: #002854;
+}
+.subs-form p {
+    margin-bottom: 10px!important;
+}
+.elementor-widget-wrap>.elementor-element {
+
+}
+.subs-form p.name input, p.email input {
+    padding-left: 20px!important;
+}
+.sub-wrapper {
+    display: flex;
+    align-items: center;
+}
+.sub-wrapper .subs-image p {
+    display: none;
+}
+.sub-wrapper .subs-image {
+    display: flex;
+    align-items: center;
+    padding: 11px 25px;
+    background-color: #0d2c54;
+    max-width: 360px;
+}
+.sub-wrapper .subs-image img {
+    margin-right: 20px;
+}
+.sub-wrapper .subs-image .subs-image-text {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.blue-line {
+    background-color: #0d2c54;
+    width: 100%;
+    padding: 20px;
+}
+.blue-line-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.blue-line-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue-line-journal {
+    padding-right: 48px;
+    position: relative;
+}
+
+.blue-line-journal::after {
+    content: "";
+    background: url(https://contrarianedge.crystal-clear.dev/wp-content/uploads/2021/04/rectangle_4_copy_1024.png);
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    right: 24px;
+}
+.blue-line-title {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.blue-line-right {
+    display: flex;
+    align-items: center;
+}
+.blue-line-subtitle {
+    font-family: Oswald;
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-right: 20px;
+}
+.fa-angle-left:before {
+    width: 9px;
+    height: 17px;
+    font-size: 25px;
+    color: #e1e4ee;
+}
+.fa-angle-right:before {
+    width: 9px;
+    height: 17px;
+    font-size: 25px;
+    color: #e1e4ee;
+}
+.penci-owl-carousel .owl-nav .owl-prev i, .penci-owl-carousel .owl-nav .owl-next i {
+    width: 100%;
+}
+.penci-owl-carousel .owl-nav .owl-prev, .penci-owl-carousel .owl-nav .owl-next {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px 0px #e1e4ee;
+}
+.quote-widget p {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+}
+.quote-widget .penci-faicon:before {
+    color: #be9e71;
+    font-size: 31px;
+}
+.quote-widget {
+    background-color: #0d2c54;
+    padding: 95px 30px 30px 30px;
+}
+.quote-widget .testimonial-sign {
+    font-family: Oswald;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: #86a9d6;
+}
+.quote-widget > i {
+    top: 30px;
+    left: 30px;
+}
+.quote-widget > p {
+    display: none;
+}
+.seemore {
+    padding: 5px;
+    max-width: 190px;
+    margin: 0 auto;
+    border: 1px solid #be9e71;
+    border-radius: 22.5px;
+    text-align: center;
+}
+.seemore a {
+    font-family: Oswald;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #be9e71;
+}
+.seemore {
+    margin-top: -20px;
+}
+
+
+.mag-post-box.hentry.first-post > .magcat-detail > .mag-header > .grid-post-box-meta.mag-meta > .featc-date{
+    display: block !important;
+}
+
+.featc-date {
+    display:none;
+}
+
+.penci-post-box-meta.penci-post-box-grid {
+    display:none;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total, .mejs-controls .mejs-time-rail .mejs-time-total {
+    background-color: #e1e4ee;
+    border-radius: 2px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+    background-color: #0d2c54;
+    border-radius: 2px;
+}
+.mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body {
+    /* 	background: none; */
+}
+
+.mejs-button.mejs-play>button {
+    background: transparent url(https://contrarianedge.crystal-clear.dev/wp-content/uploads/2021/04/shape_4_284.png) no-repeat;
+}
+.mejs-button.mejs-pause>button {
+    background: transparent url(https://contrarianedge.crystal-clear.dev/wp-content/uploads/2021/04/shape_5_303.png) no-repeat;
+}
+.sticky-wrapper.is-sticky #navigation {
+}
+.is-sticky #navigation.header-10.menu-item-padding ul.menu > li > a, .is-sticky #navigation.header-11.menu-item-padding ul.menu > li > a, .is-sticky #navigation.header-1.menu-item-padding ul.menu > li > a, .is-sticky #navigation.header-4.menu-item-padding ul.menu > li > a, .is-sticky #navigation.header-7.menu-item-padding ul.menu > li > a, .is-sticky #navigation.header-6.menu-item-padding ul.menu > li > a, .is-sticky #navigation.header-9.menu-item-padding ul.menu > li > a {
+    height: auto;
+}
+.is-sticky #navigation.header-6 .menu > li > a, .is-sticky #navigation.header-6 ul.menu > li > a {
+    line-height: 97px;
+}
+.is-sticky #navigation.header-6 #logo img {
+    padding: 12px 0;
+    max-height: 80px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    width: auto;
+}
+
+.podcast-item hr {
+    height: 1px;
+    background-color: #e1e4ee;
+    color: #e1e4ee;
+    margin-bottom: 20px!important;
+}
+.podcast-begin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 15px 0px #e1e4ee;
+}
+.podcast-image {
+    background-color: #0d2c54;
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    width: 100px;
+    height: 100px;
+    padding: 13px 20px;
+}
+.podcast-image br {
+    display: none;
+}
+.podcast-image img {
+    max-width: 25px;
+    margin: 0 auto;
+}
+
+.podcast-image span {
+    text-align: center;
+    font-family: Oswald;
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.podcast-title {
+}
+.podcast-item {
+}
+.podcast-item-title {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #353854;
+}
+.podcast-item-date {
+    font-family: Oswald;
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #babecd;
+}
+.podcast-item-text {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #090d11;
+    margin-bottom: 15px;
+}
+.podcast-item-player {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.podcast-item-play {
+    border: 1px solid #be9e71;
+    border-radius: 17.5px;
+}
+.podcast-item-play span {
+    font-family: Oswald;
+    font-size: 13px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #be9e71;
+    padding: 10px 14px 10px 39px;
+    position: relative;
+}
+.podcast-item-play span br {
+    display: none;
+}
+.podcast-item-play span::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 12px;
+    height: 14px;
+    background: url(https://contrarianedge.crystal-clear.dev/wp-content/uploads/2021/04/shape_4_284-1.png) center / cover no-repeat;
+}
+.podcast-item-time {
+    margin-left: 15px;
+    font-family: Oswald;
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #333333;
+}
+.elementor-1395 .elementor-element.elementor-element-df6bd10 {
+    margin-top: 0!important;
+}
+.elementor-1395 .elementor-element.elementor-element-443e81d > .elementor-element-populated {
+    padding: 0!important;
+    margin: 17px 0 0 0!important;
+}
+div.wpcf7 {
+    margin-top: 0;
+}
+.elementor-widget:not(:last-child) {
+    margin-bottom: 10px;
+}
+.sub-wrapper {
+    margin-bottom: 39px!important;
+}
+.elementor-1395 .elementor-element.elementor-element-9b15102 .home-featured-cat-content .magcat-detail h3 a, .elementor-1395 .elementor-element.elementor-element-9b15102 .penci-grid li .item h2 a, .elementor-1395 .elementor-element.elementor-element-9b15102 .penci-masonry .item-masonry h2 a {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #0d2c54;
+}
+.mag-excerpt.entry-content p {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
+}
+.standard-content .penci-more-link.penci-more-link-button a.more-link, .penci-readmore-btn.penci-btn-make-button a, .penci-featured-cat-seemore.penci-btn-make-button a {
+    font-family: Oswald;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #be9e71;
+    border: 1px solid #be9e71;
+    border-radius: 22.5px;
+    background: none;
+    padding: 5px 20px;
+}
+.penci-home-popular-post .item-related h3 a {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #0d2c54;
+}
+.feat-meta span > time, span.side-item-meta > time, span.date > time {
+    font-family: Oswald;
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #babecd;
+}
+.elementor-widget-penci-featured-cat .penci-featured-cat-seemore.penci-seemore-style-8, .elementor-widget-penci-featured-cat .penci-featured-cat-seemore {
+    margin-bottom: 45px;
+    display:none;
+}
+.penci-wrapper-posts-content {
+    margin-bottom: 80px;
+}
+.elementor-element-e156dda
+.penci-home-popular-posts
+span.date{
+    display: none!important;
+}
+
+.elementor-1395 .elementor-element.elementor-element-c087420 .elementor-heading-title{
+    position: relative;
+    z-index: 4;
+    padding: 0 20px;
+    background: white;
+}
+.elementor-1395 .elementor-element.elementor-element-c087420:before,
+.elementor-1395 .elementor-element.elementor-element-c087420:after {
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background-color: #e1e4ee;
+    z-index: 3;
+}
+.elementor-1395 .elementor-element.elementor-element-c087420:before {
+    left: 0;
+}
+.elementor-1395 .elementor-element.elementor-element-c087420:after {
+    right: 0;
+}
+
+.elementor-1395 .elementor-element.elementor-element-f36035a .elementor-heading-title{
+    position: relative;
+    z-index: 4;
+    padding: 0 20px;
+    background: white;
+}
+.elementor-1395 .elementor-element.elementor-element-c087420:before,
+.elementor-1395 .elementor-element.elementor-element-f36035a:after {
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background-color: #e1e4ee;
+    z-index: 3;
+}
+.elementor-1395 .elementor-element.elementor-element-f36035a:before {
+    left: 0;
+}
+.elementor-1395 .elementor-element.elementor-element-f36035a:after {
+    right: 0;
+}
+.elementor-button-content-wrapper {
+    border: 1px solid #be9e71;
+    border-radius: 22.5px;
+    padding: 5px 25px;
+}
+.elementor-widget-button .elementor-button {
+    font-family: Oswald;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #be9e71;
+    background: none;
+    margin-bottom: 25px;
+}
+
+.elementor-element-510d3b0
+.penci-home-popular-posts {
+    margin-bottom: 0;
+}
+.penci-pagination.penci-ajax-more a.penci-ajax-more-button {
+    max-width: 300px;
+    border: 1px solid #be9e71;
+    border-radius: 23.5px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.penci-pagination.penci-ajax-more a.penci-ajax-more-button .ajax-more-text {
+    font-family: Oswald;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #be9e71;
+    margin-left: 15px;
+}
+.penci-ajax-more-button .penci-faicon:before{
+    color: #be9e71;
+}
+.elementor-element-c087420 {
+    margin-bottom: 30px;
+}
+.elementor-element-e156dda
+.penci-home-popular-posts {
+    margin-bottom: 20px;
+}
+.penci-homepage-title.style-4 .inner-arrow:before,
+.penci-homepage-title.style-4 .inner-arrow:after{
+    border: 1px solid #e1e4ee;
+}
+.elementor-element-c08742,
+.elementor-element-f36035a {
+    margin-bottom: 30px!important;
+}
+.elementor-1395 .elementor-element.elementor-element-c087420 {
+    margin-bottom: 30px;
+}
+.elementor-element-08b7652 .owl-stage-outer .owl-item {
+    /* 		padding-right: 2.5px!important;
+                padding-left: 2.5px!important; */
+}
+.elementor-element-08b7652 .item {
+
+    width: 100%;
+}
+.subs-main .subs-main-form input::placeholder {
+    font-family: Oswald;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #a8b1bf;
+}
+.penci-top-search .search-click {display: flex!important;}
+.elementor-1395 .elementor-element.elementor-element-c087420 .elementor-heading-title {
+    font-family: Oswald;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0d2c54!important;
+}
+
+.elementor-1395 .elementor-element.elementor-element-f36035a .elementor-heading-title {
+    font-family: Oswald;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0d2c54!important;
+}
+
+.subs-form input::placeholder {
+    font-family: Oswald!important;
+    font-size: 16px!important;
+    line-height: 24px!important;
+    font-weight: 400;
+    color: #a8b1bf!important;
+}
+
+.elementor-1395 .elementor-element.elementor-element-377a7da .penci-border-arrow .inner-arrow {
+    font-family: Oswald;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0d2c54!important;
+}
+
+.featc-date time {
+    text-transform: uppercase!important;
+}
+.penci-sidebar-content.style-4 .penci-border-arrow .inner-arrow:before, .penci-sidebar-content.style-4 .penci-border-arrow .inner-arrow:after, .penci-homepage-title.style-4 .inner-arrow:before, .penci-homepage-title.style-4 .inner-arrow:after{
+    border: none;
+    opacity: 1;
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 1px;
+    top: 50%;
+    background-color: #e1e4ee;
+    z-index: 3;
+}
+
+.penci-grid li .item p, .penci-masonry .item-masonry p {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.penci-home-popular-post .item-related h3 a {
+    text-transform: none;
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #0d2c54;
+}
+.blue-line {
+    background-color: #0d2c54;
+    width: 100%;
+    padding: 13px;
+}

@@ -63,8 +63,8 @@
   letter-spacing: 0.5px;
   color: $c-dark;
   margin: 0 0 20px;
-  display: inline-block;
-  margin-left: 60vw;
+  display: block;
+  text-align: center;
 
   @media ($m-desktop) {
     margin-left: 46vw;
