@@ -1,0 +1,57 @@
+.photo-gallery-navigation {
+  @media ($m-mobile) {
+    display: none;
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+    outline: none;
+
+    &:focus, &:active {
+      user-select: none;
+      outline: none;
+    }
+
+    &:hover {
+      & svg path {
+        fill-opacity: 1;
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: .3;
+      pointer-events: none;
+    }
+
+    & svg {
+      width: 100%;
+      height: auto;
+
+      & path {
+        transition: 150ms;
+      }
+    }
+
+    &.button-prev {
+      left: 10px;
+    }
+
+    &.button-next {
+      right: 10px;
+    }
+  }
+}

@@ -1,3 +1,14 @@
+function getSizeBoxes(elem)
+{
+    let elemWidth = elem.getBoundingClientRect().right - elem.getBoundingClientRect().left;
+    let elemHeight = elem.getBoundingClientRect().bottom - elem.getBoundingClientRect().top;
+
+    return {
+        width: elemWidth,
+        height: elemHeight
+    };
+}
+
 function Marquee (node, opt)
 {
     let self = this;
@@ -100,7 +111,6 @@ window.addEventListener('load', function ()
             initMoveElement('.info-box-title_move-left', {velocity: .5});
             initMoveElement('[data-node-text-move="works"]', {velocity: .5});
             initMoveElement('[data-node-text-move="box-text-move-descr"]', {velocity: 1.2});
-
             initMoveElement('.slogan__text', {velocity: .5});
         }
 
@@ -119,19 +129,21 @@ window.addEventListener('load', function ()
 
         //open---close menu and popup success
         let status =
-        {
-            menuOpen: false,
-            popupOpen: false
-        };
+            {
+                menuOpen: false,
+                popupOpen: false
+            };
 
         function changesWhenOpeningPopup() {
             document.documentElement.style.width = document.body.clientWidth + 'px';
             document.documentElement.style.overflow = 'hidden';
+            header.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
         }
 
         function changesWhenClosingPopup() {
             document.documentElement.style.width = 'auto';
             document.documentElement.style.overflow = 'visible';
+            header.style.paddingRight = '0';
         }
 
         if (btnToggle)
@@ -208,6 +220,10 @@ window.addEventListener('load', function ()
                     type: 'bullets',
                     clickable: true
                 },
+                navigation: {
+                    nextEl: ".button-next",
+                    prevEl: ".button-prev"
+                },
                 spaceBetween: 30,
                 slidesPerView: 1
             }
@@ -239,7 +255,6 @@ window.addEventListener('load', function ()
         //header
         handleClassNameOnScrolling(header, 'header-fixed');
 
-
         window.addEventListener('scroll', function ()
         {
             handleClassNameOnScrolling(header, 'header-fixed');
@@ -248,31 +263,32 @@ window.addEventListener('load', function ()
 );
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
-    let listElForAnim_1 = [
-        '.form-field__row',
-        '.form-checkbox',
-        '.works-list__item',
-        '.box-text-move-title',
-        '.client-list__item',
-        '.section-title',
-        '.info-box-text',
-        '.content-list',
-        '.button-corner',
-        '.info-box-title',
-        '.box-text-move',
-        '.footer'
-    ];
-    let listElForAnim_2 = [
-        '.info-group-photo',
-        '.info-box-img',
-        '.wr-gif',
-        '.info-img-small'
-    ];
-    let listElForAnim_3 = [
-        '.content__line',
-        '.info-line'
-    ];
+let listElForAnim_1 = [
+    '.form-field__row',
+    '.form-checkbox',
+    '.works-list__item',
+    '.box-text-move-title',
+    '.client-list__item',
+    '.section-title',
+    '.info-box-text',
+    '.content-list',
+    '.button-corner',
+    '.info-box-title',
+    '.box-text-move',
+    '.photo-gallery-navigation__button',
+    '.footer'
+];
+let listElForAnim_2 = [
+    '.info-group-photo__inner',
+    '.info-box-img',
+    '.wr-gif',
+    '.info-img-small'
+];
+let listElForAnim_3 = [
+    '.content__line',
+    '.info-line'
+];
 
-    handleClassNameForAnimation(listElForAnim_1, 'fadeIn', 50);
-    handleClassNameForAnimation(listElForAnim_2, 'heightIn', 50);
-    handleClassNameForAnimation(listElForAnim_3, 'widthIn', 50);
+handleClassNameForAnimation(listElForAnim_1, 'fadeIn', 50);
+handleClassNameForAnimation(listElForAnim_2, 'fadeIn', 50);
+handleClassNameForAnimation(listElForAnim_3, 'widthIn', 50);

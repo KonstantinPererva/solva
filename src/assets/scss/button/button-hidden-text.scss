@@ -28,8 +28,20 @@
     white-space: nowrap;
   }
 
+  &_dark &__text {
+    color: #000;
+  }
+
   &__ico {
     flex-shrink: 0;
     display: block;
+  }
+
+  &_dark &__ico svg circle {
+    fill: #000;
+  }
+
+  &_dark &__ico svg path {
+    fill: #fff;
   }
 }
