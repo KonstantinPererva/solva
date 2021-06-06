@@ -124,7 +124,7 @@ window.addEventListener('load', function ()
         let menu = document.querySelector('.menu');
         let popup = document.querySelector('.popup');
         let btnSubmit = document.querySelector('.button-form-submit');
-        let header = document.querySelector('.header .midnightHeader');
+        // let header = document.querySelector('.header .midnightHeader');
         let body = document.body;
 
         //open---close menu and popup success
@@ -137,13 +137,13 @@ window.addEventListener('load', function ()
         function changesWhenOpeningPopup() {
             document.documentElement.style.width = document.body.clientWidth + 'px';
             document.documentElement.style.overflow = 'hidden';
-            header.style.right = window.innerWidth - document.body.clientWidth + 'px';
+            // header.style.right = window.innerWidth - document.body.clientWidth + 'px';
         }
 
         function changesWhenClosingPopup() {
             document.documentElement.style.width = 'auto';
             document.documentElement.style.overflow = 'visible';
-            header.style.right = '0';
+            // header.style.right = '0';
         }
 
         if (btnToggle.length)
@@ -199,6 +199,7 @@ window.addEventListener('load', function ()
                     popup.style.opacity = '1';
                 },10);
                 btnToggle[0].classList.add('open');
+                btnToggle[1].classList.add('open');
                 body.classList.add('in-open-popup');
                 changesWhenOpeningPopup();
             });

@@ -51,27 +51,3 @@
     }
   }
 }
-
-.wr-btn-h {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-
-  &__inner {
-    height: 50px !important;
-    width: 200px !important;
-    position: fixed;
-    z-index: 2800;
-    top: auto !important;
-    bottom: 20px !important;
-    left: auto !important;
-    right: auto !important;
-    visibility: visible !important;
-
-    & .midnightInner {
-      overflow: visible !important;
-      display: flex;
-      justify-content: flex-end;
-    }
-  }
-}
