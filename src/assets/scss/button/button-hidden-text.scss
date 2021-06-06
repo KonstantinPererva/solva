@@ -26,9 +26,21 @@
     width: 0;
     transition: 150ms;
     white-space: nowrap;
+
+    .midnightHeader.default & {
+      color: #FFFFFF;
+    }
   }
 
   &_dark &__text {
+    color: #000;
+  }
+
+  .midnightHeader.white &__text {
+    color: #000;
+  }
+
+  .midnightHeader.white &_dark &__text {
     color: #000;
   }
 
@@ -37,11 +49,35 @@
     display: block;
   }
 
+  &__ico svg circle {
+    fill: #000;
+
+    .midnightHeader.default & {
+      fill: #FFFFFF;
+    }
+  }
+
+  &__ico svg path {
+    fill: #fff;
+
+    .midnightHeader.default & {
+      fill: #000;
+    }
+  }
+
   &_dark &__ico svg circle {
     fill: #000;
+
+    .midnightHeader.default & {
+      fill: #FFFFFF;
+    }
   }
 
   &_dark &__ico svg path {
     fill: #fff;
+
+    .midnightHeader.default & {
+      fill: #000;
+    }
   }
 }

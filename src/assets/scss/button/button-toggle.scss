@@ -14,7 +14,15 @@
       transition: inherit;
       stroke: $c-dark;
 
-      .wrapper-theme-dark &, .in-section-main &, .in-open-popup &, .header-fixed & {
+      .midnightHeader.default & {
+        stroke: #E9EBED;
+      }
+
+      .midnightHeader.white & {
+        stroke: $c-dark;
+      }
+
+      .wrapper-theme-dark &, .in-open-popup .midnightHeader.white & {
         stroke: #E9EBED;
       }
     }

@@ -120,11 +120,11 @@ window.addEventListener('load', function ()
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
         // variables ( menu , popup , header )
-        let btnToggle = document.querySelector('.button-toggle');
+        let btnToggle = document.querySelectorAll('.button-toggle');
         let menu = document.querySelector('.menu');
         let popup = document.querySelector('.popup');
         let btnSubmit = document.querySelector('.button-form-submit');
-        let header = document.querySelector('.header');
+        let header = document.querySelector('.header .midnightHeader');
         let body = document.body;
 
         //open---close menu and popup success
@@ -137,53 +137,55 @@ window.addEventListener('load', function ()
         function changesWhenOpeningPopup() {
             document.documentElement.style.width = document.body.clientWidth + 'px';
             document.documentElement.style.overflow = 'hidden';
-            header.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
+            header.style.right = window.innerWidth - document.body.clientWidth + 'px';
         }
 
         function changesWhenClosingPopup() {
             document.documentElement.style.width = 'auto';
             document.documentElement.style.overflow = 'visible';
-            header.style.paddingRight = '0';
+            header.style.right = '0';
         }
 
-        if (btnToggle)
+        if (btnToggle.length)
         {
-            btnToggle.addEventListener("click", function()
-            {
-                if(!status.menuOpen && !status.popupOpen)
+            for (let i = 0; i < btnToggle.length; i++) {
+                btnToggle[i].addEventListener("click", function()
                 {
-                    status.menuOpen = true;
-                    btnToggle.classList.add('open');
-                    menu.classList.add('open');
-                    setTimeout(function () {
-                        menu.style.opacity = '1';
-                    },10);
-                    body.classList.add('in-open-popup');
-                    changesWhenOpeningPopup();
-                }
-                else if (status.menuOpen)
-                {
-                    status.menuOpen = false;
-                    btnToggle.classList.remove('open');
-                    menu.style.opacity = '0';
-                    setTimeout(function () {
-                        menu.classList.remove('open');
-                        changesWhenClosingPopup();
-                    },300);
-                    body.classList.remove('in-open-popup');
-                }
-                else if (status.popupOpen)
-                {
-                    status.popupOpen = false;
-                    popup.style.opacity = '0';
-                    setTimeout(function () {
-                        popup.classList.remove('open');
-                        changesWhenClosingPopup();
-                    },300);
-                    btnToggle.classList.remove('open');
-                    body.classList.remove('in-open-popup');
-                }
-            });
+                    if(!status.menuOpen && !status.popupOpen)
+                    {
+                        status.menuOpen = true;
+                        this.classList.add('open');
+                        menu.classList.add('open');
+                        setTimeout(function () {
+                            menu.style.opacity = '1';
+                        },10);
+                        body.classList.add('in-open-popup');
+                        changesWhenOpeningPopup();
+                    }
+                    else if (status.menuOpen)
+                    {
+                        status.menuOpen = false;
+                        this.classList.remove('open');
+                        menu.style.opacity = '0';
+                        setTimeout(function () {
+                            menu.classList.remove('open');
+                            changesWhenClosingPopup();
+                        },300);
+                        body.classList.remove('in-open-popup');
+                    }
+                    else if (status.popupOpen)
+                    {
+                        status.popupOpen = false;
+                        popup.style.opacity = '0';
+                        setTimeout(function () {
+                            popup.classList.remove('open');
+                            changesWhenClosingPopup();
+                        },300);
+                        this.classList.remove('open');
+                        body.classList.remove('in-open-popup');
+                    }
+                });
+            }
         }
 
         //open popup success
@@ -196,7 +198,7 @@ window.addEventListener('load', function ()
                 setTimeout(function () {
                     popup.style.opacity = '1';
                 },10);
-                btnToggle.classList.add('open');
+                btnToggle[0].classList.add('open');
                 body.classList.add('in-open-popup');
                 changesWhenOpeningPopup();
             });
@@ -252,13 +254,13 @@ window.addEventListener('load', function ()
         }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
-        //header
-        handleClassNameOnScrolling(header, 'header-fixed');
-
-        window.addEventListener('scroll', function ()
-        {
-            handleClassNameOnScrolling(header, 'header-fixed');
-        });
+        //
+        // handleClassNameOnScrolling(header, 'header-fixed');
+        //
+        // window.addEventListener('scroll', function ()
+        // {
+        //     handleClassNameOnScrolling(header, 'header-fixed');
+        // });
     }
 );
 
@@ -292,3 +294,10 @@ let listElForAnim_3 = [
 handleClassNameForAnimation(listElForAnim_1, 'fadeIn', 50);
 handleClassNameForAnimation(listElForAnim_2, 'fadeIn', 50);
 handleClassNameForAnimation(listElForAnim_3, 'widthIn', 50);
+
+// Start midnight
+$(document).ready(function(){
+    // Change this to the correct selector.
+    $('header.fixed').midnight();
+    $('.wr-btn-h__inner').midnight();
+});

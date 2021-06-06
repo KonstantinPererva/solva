@@ -35,11 +35,21 @@
     stroke: white;
   }
 }
+
 .midnightHeader.white .logo svg path {
   fill: black;
 
   &:last-child {
     fill: none;
     stroke: black;
+
+    .in-open-popup & {
+      fill: none;
+      stroke: white;
+    }
+  }
+
+  .in-open-popup & {
+    fill: white;
   }
 }
